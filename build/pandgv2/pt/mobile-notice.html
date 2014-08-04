@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding-middle">
+    <section class="mobile-banner">
+      <div class="close">
+        <span class="pull-right" id="opt-in-header-close">&times;</span>
+      </div>
+      <div class="mobile-notice" id="notice">
+        <p>N&otilde;s usamos cookies para lhe dar a melhor experi&ecirc;ncia m&otilde;vel para o nosso site.</p>
+        <a href="#" id="show-options">Para mais informa&#231;&#227;o</a>
+      </div>
+      <div id="option" class="mobile-notice" style="display: none">
+        <div class="notice">
+          Os cookies fornecem funcionalidades adicionais e nos permite fornecer informa&ccedil;&otilde;es sob medida para voc&ecirc;.
+        </div>
+        <div class="split">
+          <div class="accepts" id="opt-in-user-accepts">
+            Permitir cookies
+          </div>
+        </div>
+        <div class="split">
+          <div class="declines" id="opt-in-user-declines">
+            Recusar o uso de cookies
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    document.getElementById("opt-in-header-close").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-closed');
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+
+    document.getElementById("show-options").onclick = function() {
+      document.getElementById("option").style.display = 'block';
+      document.getElementById("notice").style.display = 'none';
+    };
+    </script>
+  </body>
+</html>

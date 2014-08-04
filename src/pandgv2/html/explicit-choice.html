@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>{% blocktrans %}Would you like to allow cookies?{% endblocktrans %}</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="mister-cookie-wrapper">
+          <p>{% blocktrans %}We've always used approved digital 'cookies' to give our visitors a more personal website experience. Are you happy for them to stay? Please note, <strong>cookies must be turned on</strong> if you want to register.{% endblocktrans %}</p>
+        </div>
+        <h2 class="how-cookies-work">{% blocktrans %}How cookies work:{% endblocktrans %}</h2>
+        <img class="opt-in-illustration" src="{% blocktrans %}../img/how_cookies_work.png{% endblocktrans %}" alt="{% blocktrans %}How cookies work:{% endblocktrans %}" />
+        <ul class="opt-in-illustrated">
+          <li class="one">{% blocktrans %}When you click on a link about certain products{% endblocktrans %}</li>
+          <li class="two">{% blocktrans %}We get an idea of the things you&rsquo;d be interested in{% endblocktrans %}</li>
+          <li class="three">{% blocktrans %}So we&rsquo;ll be able to give you more relevant coupons and information{% endblocktrans %}</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="{% blocktrans %}http://www.pg.com/en_US/privacy/english/cookie_notice.shtml{% endblocktrans %}" target="_blank">
+            {% blocktrans %}Find out more about cookies{% endblocktrans %}
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">{% blocktrans %}No, turn cookies off{% endblocktrans %}</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">{% blocktrans %}Yes, allow cookies and continue{% endblocktrans %}</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('are_you_sure');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

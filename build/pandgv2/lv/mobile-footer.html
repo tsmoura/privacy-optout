@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="opt-in-is-active opted_in">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <a href="#" id="opt-out" class="mobile-opt-out-button">Atkritumu s&#299;kdatnes</a>
+    <script type="text/javascript">
+    document.getElementById("opt-out").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    </script>
+  </body>
+</html>

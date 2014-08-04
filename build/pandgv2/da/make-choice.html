@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>Skift indstillinger for cookies</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">Disse digitale &quot;cookies&quot; giver dig en mere personlig oplevelse af vores hjemmeside ved at registrere, hvad du klikker p&aring;.  Godkendte cookies har altid eksisteret, men vi vil gerne sikre os, at du forst&aring;r, hvordan de anvendes.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Cookies giver dig mulighed for:</h2>
+          <ul class="list mister-cookie">
+            <li>At blive registreret medlem</li>
+            <li>Poste kommentarer og vurderinger</li>
+            <li>At bestille gratis pr&oslash;ver og udskrive rabatkuponer</li>
+            <li>At se oplysninger, der er skr&aelig;ddersyet til dig</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">S&aring;dan fungerer cookies:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_da.png" alt="S&aring;dan fungerer cookies:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">N&aring;r du klikker p&aring; et link om bestemte produkter</li>
+          <li class="two">F&aring;r vi en id&eacute; om, hvilke ting du er interesseret i</li>
+          <li class="three">S&aring; vi kan give dig mere relevante kuponer og informationer</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/danish/cookie_notice.shtml" target="_blank">
+            L&aelig;s mere om cookies
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Nej, sl&aring; cookies fra</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Ja, tillad cookies</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

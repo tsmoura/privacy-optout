@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      Do you want some cookies now?
+      <a href="#" id="opt-in-user-accepts">S&#237;</a>
+      <a href="#" id="opt-in-user-declines">no</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    // document.getElementById("opt-in-find-out-more-link").onclick = function() {
+    //   Connector.trigger('bt-privacy-find-out-more');
+    // };
+    </script>
+  </body>
+</html>

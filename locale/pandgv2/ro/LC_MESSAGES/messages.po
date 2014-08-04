@@ -1,0 +1,252 @@
+# Romainian Translations (ro)
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-29 13:49-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pandgv2/html/are-you-sure.html:19
+msgid "Hold on, are you sure?"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:23
+#: src/pandgv2/html/cookies-required.html:24
+msgid "Without cookies you can't:"
+msgstr "F&#259;r&#259; modulele cookie nu pute&#355;i s&#259;:"
+
+#: src/pandgv2/html/are-you-sure.html:25
+msgid "Become a registered member"
+msgstr "Deveni&#355;i un membru &#238;nregistrat"
+
+#: src/pandgv2/html/are-you-sure.html:26
+#: src/pandgv2/html/cookies-required.html:27
+#: src/pandgv2/html/make-choice.html:27
+msgid "Post comments or ratings"
+msgstr "Posta&#355;i comentarii sau evalu&#259;ri"
+
+#: src/pandgv2/html/are-you-sure.html:27
+#: src/pandgv2/html/cookies-required.html:28
+msgid "Order free samples and print money-off coupons"
+msgstr "Comanda&#355;i mostre gratuite &#351;i s&#259; tip&#259;ri&#355;i cupoane de reducere"
+
+#: src/pandgv2/html/are-you-sure.html:28
+msgid "See information that's tailored to you"
+msgstr "Consulta&#355;i informa&#355;iile care sunt personalizate pentru dvs."
+
+#: src/pandgv2/html/are-you-sure.html:30
+msgid ""
+"Even if you're already registered, you won't be able to enjoy the "
+"personalised experience you're used to."
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:32
+#: src/pandgv2/html/cookies-disabled.html:23
+#: src/pandgv2/html/cookies-required.html:31
+#: src/pandgv2/html/explicit-choice.html:33
+#: src/pandgv2/html/make-choice.html:40 src/pandgv2/html/notice-banner.html:26
+#: src/pandgv2/html/opted-out-banner.html:21
+#: src/pandgv2/html/simple-notice.html:26
+msgid "http://www.pg.com/en_US/privacy/english/cookie_notice.shtml"
+msgstr "http://www.pg.com/en_US/privacy/romanian/cookie_notice.shtml"
+
+#: src/pandgv2/html/are-you-sure.html:33
+#: src/pandgv2/html/cookies-disabled.html:24
+#: src/pandgv2/html/cookies-required.html:32
+#: src/pandgv2/html/explicit-choice.html:34
+#: src/pandgv2/html/make-choice.html:41 src/pandgv2/html/notice-banner.html:27
+#: src/pandgv2/html/opted-out-banner.html:22
+#: src/pandgv2/html/simple-notice.html:27
+msgid "Find out more about cookies"
+msgstr "Afla&#355;i mai multe despre modulele cookie"
+
+#: src/pandgv2/html/are-you-sure.html:42
+msgid "Yes I'm sure, turn cookies off"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:45
+#: src/pandgv2/html/cookies-required.html:40
+msgid "Allow cookies and continue"
+msgstr "Permit modulele cookie &#351;i continui"
+
+#: src/pandgv2/html/cookies-disabled.html:19
+#: src/pandgv2/html/notice-banner.html:19
+msgid "We use cookies to give you the best experience of our website. By browsing you agree to our use of cookies."
+msgstr "Noi utiliz&#259;m module cookie pentru a v&#259; oferi cea mai bun&#259; experien&#355;&#259; a site-ului nostru web.  Prin navigare sunte&#355;i de acord s&#259; utiliza&#355;i modulele noastre cookie."
+
+#: src/pandgv2/html/cookies-required.html:19
+msgid "Oops, your cookies are turned off"
+msgstr "Ups! Modulele dvs. cookie au fost dezactivate."
+
+#: src/pandgv2/html/cookies-required.html:23
+msgid "Please allow cookies to register or log in to your account."
+msgstr "V&#259; rug&#259;m s&#259; permite&#355;i &#238;nregistrarea sau autentificarea modulelor cookie &#238;n contul dvs."
+
+#: src/pandgv2/html/cookies-required.html:26
+msgid "Become a registered member or log in"
+msgstr "Deveni&#355;i un membru &#238;nregistrat sau s&#259; v&#259; autentifica&#355;i"
+
+#: src/pandgv2/html/cookies-required.html:29
+#: src/pandgv2/html/make-choice.html:29
+msgid "See information that&rsquo;s tailored to you"
+msgstr "Consulta&#355;i informa&#355;iile care sunt personalizate pentru dvs."
+
+#: src/pandgv2/html/cookies-required.html:43
+msgid "Cancel"
+msgstr "Anulare"
+
+#: src/pandgv2/html/explicit-choice.html:19
+msgid "Would you like to allow cookies?"
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:23
+msgid ""
+"We've always used approved digital 'cookies' to give our visitors a more "
+"personal website experience. Are you happy for them to stay? Please note, "
+"<strong>cookies must be turned on</strong> if you want to register."
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:25 standard input:26
+#: src/pandgv2/html/make-choice.html:32 input:33
+msgid "How cookies work:"
+msgstr "Cum func&#355;ioneaz&#259; modulele cookie:"
+
+#: src/pandgv2/html/explicit-choice.html:26
+#: src/pandgv2/html/make-choice.html:33
+msgid "../img/how_cookies_work.png"
+msgstr "../img/how_cookies_work_ro.png"
+
+#: src/pandgv2/html/explicit-choice.html:28
+#: src/pandgv2/html/make-choice.html:35
+msgid "When you click on a link about certain products"
+msgstr "Atunci c&#226;nd face&#355;i clic pe o leg&#259;tur&#259; despre anumite produse"
+
+#: src/pandgv2/html/explicit-choice.html:29
+#: src/pandgv2/html/make-choice.html:36
+msgid "We get an idea of the things you&rsquo;d be interested in"
+msgstr "Reu&#351;im s&#259; ne facem o idee despre lucrurile care v&#259; intereseaz&#259;"
+
+#: src/pandgv2/html/explicit-choice.html:30
+#: src/pandgv2/html/make-choice.html:37
+msgid "So we&rsquo;ll be able to give you more relevant coupons and information"
+msgstr "Astfel vom fi capabili s&#259; v&#259; oferim mai multe cupoane &#351;i informa&#355;ii relevante"
+
+#: src/pandgv2/html/explicit-choice.html:42
+#: src/pandgv2/html/make-choice.html:49
+msgid "No, turn cookies off"
+msgstr "Nu, dezactiva&#355;i modulele cookie"
+
+#: src/pandgv2/html/explicit-choice.html:45
+#: src/pandgv2/html/make-choice.html:52
+msgid "Yes, allow cookies and continue"
+msgstr "Da, permit modulele cookie &#351;i continui"
+
+#: src/pandgv2/html/make-choice.html:19
+#: src/pandgv2/html/opted-in-banner.html:20
+msgid "Change Cookie Settings"
+msgstr "Modificarea set&#259;rilor modulelor cookie"
+
+#: src/pandgv2/html/make-choice.html:22
+msgid ""
+"We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;"
+"cookies&rdquo; give you a more personal website experience by tracking what "
+"you click on. Approved cookies have always been there, but we need to make "
+"sure you understand what they&rsquo;re about."
+msgstr "Aceste module digitale &#8222;cookie&#8221; v&#259; ofer&#259; o experien&#539;&#259; mai personal&#259; a site-ului web prin urm&#259;rirea elementelor pe care face&#539;i clic.  Modulele cookie aprobate au existat &#238;ntotdeauna aici, dar dorim s&#259; ne asigur&#259;m c&#259; a&#539;i &#238;n&#539;eles modul lor de utilizare."
+
+#: src/pandgv2/html/make-choice.html:24
+msgid "Cookies allow you to:"
+msgstr "Modulele cookie v&#259; permit s&#259;:"
+
+#: src/pandgv2/html/make-choice.html:26
+msgid "Become a registered member to log in"
+msgstr "Deveni&#355;i un membru &#238;nregistrat"
+
+#: src/pandgv2/html/make-choice.html:28
+msgid "Print off money saving coupons"
+msgstr "Comanda&#539;i mostre gratuite &#x219;i s&#259; tip&#259;ri&#539;i cupoane de reducere"
+
+#: src/pandgv2/html/mobile-choice.html:18
+msgid "Do you want some cookies now?"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:19
+msgid "yes"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:20
+msgid "no"
+msgstr ""
+
+#: src/pandgv2/html/mobile-footer.html:17
+#: src/pandgv2/html/mobile-notice.html:36
+msgid "Turn Off Cookies"
+msgstr "Opri&#539;i cookie-uri"
+
+#: src/pandgv2/html/mobile-notice.html:22
+msgid "We use cookies to give you the best mobile experience for our website."
+msgstr "Noi folosim cookie-uri pentru a v&#259; oferi cea mai bun&#259; experien&#539;&#259; mobil&#259; pentru site-ul nostru."
+
+#: src/pandgv2/html/mobile-notice.html:23
+#: src/pandgv2/html/mobile-explicit-choice.html:20
+msgid "Learn More"
+msgstr "Afla&#539;i mai multe"
+
+#: src/pandgv2/html/mobile-notice.html:27
+msgid "Cookies provide added functionality and allow us to provide information tailored to you."
+msgstr "Cookie-urile ofer&#259; func&#539;ionalitate ad&#259;ugat&#259; &#351;i ne permit s&#259; furnizeze informa&#539;ii adaptate pentru tine."
+
+#: src/pandgv2/html/mobile-notice.html:31
+#: src/pandgv2/html/mobile-opted-out.html:17
+#: src/pandgv2/html/opted-out-banner.html:26
+msgid "Allow Cookies"
+msgstr "Permit modulele cookie"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. "
+"Cookies must be enabled in order to continue."
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:22
+msgid  ""
+"Cookies provide added functionality and allow us to provide "
+"information tailored to you"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:23
+msgid  "P&amp;G Privacy Policy"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:30
+msgid  "Leave Site"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:46
+msgid  "http://pg.com"
+msgstr ""
+
+#: src/pandgv2/html/notice-banner.html:23
+#: src/pandgv2/html/simple-notice.html:23
+msgid "Change cookie settings"
+msgstr "Modificarea set&#259;rilor modulelor cookie"
+
+#: src/pandgv2/html/opted-in-banner.html:19
+msgid "<strong>Good news! Your cookies are turned on.</strong> This means you are enjoying the best personalised experience."
+msgstr "<strong>Ve&#351;ti bune!  Modulele dvs. cookie au fost activate.</strong> Acest lucru &#238;nseamn&#259; c&#259; v&#259; bucura&#355;i de cea mai bun&#259; experien&#355;&#259; personalizat&#259;."
+
+#: src/pandgv2/html/opted-out-banner.html:20
+msgid "Turn cookies on for a better website experience"
+msgstr "Activa&#355;i modulele cookie pentru o experien&#355;&#259; mai bun&#259; pe site-ul web."
+
+#: src/pandgv2/html/simple-notice.html:19
+msgid "We use cookies to give you the best experience of our website."
+msgstr "Noi utiliz&#259;m module cookie pentru a v&#259; oferi cea mai bun&#259; experien&#355;&#259; a site-ului nostru web."

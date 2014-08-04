@@ -1,0 +1,278 @@
+# Swedish Translations (se)
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-29 14:16-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pandgv2/html/are-you-sure.html:19
+msgid "Hold on, are you sure?"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:23
+#: src/pandgv2/html/cookies-required.html:24
+msgid "Without cookies you can't:"
+msgstr "Utan cookies kan du inte:"
+
+#: src/pandgv2/html/are-you-sure.html:25
+msgid "Become a registered member"
+msgstr "Bli en registrerad medlem"
+
+#: src/pandgv2/html/are-you-sure.html:26
+#: src/pandgv2/html/cookies-required.html:27
+#: src/pandgv2/html/make-choice.html:27
+msgid "Post comments or ratings"
+msgstr "Kommentera och s&auml;tta betyg"
+
+#: src/pandgv2/html/are-you-sure.html:27
+#: src/pandgv2/html/cookies-required.html:28
+msgid "Order free samples and print money-off coupons"
+msgstr "Best&auml;lla gratisprover och skriva ut rabattkuponger"
+
+#: src/pandgv2/html/are-you-sure.html:28
+msgid "See information that's tailored to you"
+msgstr "Se information som &auml;r skr&auml;ddarsydd f&ouml;r dig"
+
+#: src/pandgv2/html/are-you-sure.html:30
+msgid ""
+"Even if you're already registered, you won't be able to enjoy the "
+"personalised experience you're used to."
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:32
+#: src/pandgv2/html/cookies-disabled.html:23
+#: src/pandgv2/html/cookies-required.html:31
+#: src/pandgv2/html/explicit-choice.html:33
+#: src/pandgv2/html/make-choice.html:40 src/pandgv2/html/notice-banner.html:26
+#: src/pandgv2/html/opted-out-banner.html:21
+#: src/pandgv2/html/simple-notice.html:26
+msgid "http://www.pg.com/en_US/privacy/english/cookie_notice.shtml"
+msgstr "http://www.pg.com/en_US/privacy/swedish/cookie_notice.shtml"
+
+#: src/pandgv2/html/are-you-sure.html:33
+#: src/pandgv2/html/cookies-disabled.html:24
+#: src/pandgv2/html/cookies-required.html:32
+#: src/pandgv2/html/explicit-choice.html:34
+#: src/pandgv2/html/make-choice.html:41 src/pandgv2/html/notice-banner.html:27
+#: src/pandgv2/html/opted-out-banner.html:22
+#: src/pandgv2/html/simple-notice.html:27
+msgid "Find out more about cookies"
+msgstr "Mer information om cookies"
+
+#: src/pandgv2/html/are-you-sure.html:42
+msgid "Yes I'm sure, turn cookies off"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:45
+#: src/pandgv2/html/cookies-required.html:40
+msgid "Allow cookies and continue"
+msgstr "Till&aring;t cookies och forts&auml;tt"
+
+#: src/pandgv2/html/cookies-disabled.html:19
+#: src/pandgv2/html/notice-banner.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. By browsing "
+"you agree to our use of cookies."
+msgstr ""
+"Vi anv&auml;nder cookies f&ouml;r att ge dig b&auml;sta m&ouml;jliga "
+"upplevelse p&aring; v&aring;r webbplats. Genom att bes&ouml;ka oss godk&auml;"
+"nner du v&aring;r anv&auml;ndning av cookies."
+
+#: src/pandgv2/html/cookies-required.html:19
+msgid "Oops, your cookies are turned off"
+msgstr "Oj! Dina cookies &auml;r avaktiverade"
+
+#: src/pandgv2/html/cookies-required.html:23
+msgid "Please allow cookies to register or log in to your account."
+msgstr ""
+"V&auml;nligen till&aring;t cookies f&ouml;r att registrera dig eller logga "
+"in p&aring; ditt konto"
+
+#: src/pandgv2/html/cookies-required.html:26
+msgid "Become a registered member or log in"
+msgstr "Registrera dig som medlem eller logga in"
+
+#: src/pandgv2/html/cookies-required.html:29
+#: src/pandgv2/html/make-choice.html:29
+msgid "See information that&rsquo;s tailored to you"
+msgstr "Se information som &auml;r skr&auml;ddarsydd f&ouml;r dig"
+
+#: src/pandgv2/html/cookies-required.html:43
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/pandgv2/html/explicit-choice.html:19
+msgid "Would you like to allow cookies?"
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:23
+msgid ""
+"We've always used approved digital 'cookies' to give our visitors a more "
+"personal website experience. Are you happy for them to stay? Please note, "
+"<strong>cookies must be turned on</strong> if you want to register."
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:25 standard input:26
+#: src/pandgv2/html/make-choice.html:32 input:33
+msgid "How cookies work:"
+msgstr "S&aring; h&auml;r fungerar cookies:"
+
+#: src/pandgv2/html/explicit-choice.html:26
+#: src/pandgv2/html/make-choice.html:33
+msgid "../img/how_cookies_work.png"
+msgstr "../img/how_cookies_work_se.png"
+
+#: src/pandgv2/html/explicit-choice.html:28
+#: src/pandgv2/html/make-choice.html:35
+msgid "When you click on a link about certain products"
+msgstr "N&auml;r du klickar p&aring; en l&auml;nk till vissa produkter"
+
+#: src/pandgv2/html/explicit-choice.html:29
+#: src/pandgv2/html/make-choice.html:36
+msgid "We get an idea of the things you&rsquo;d be interested in"
+msgstr "f&aring;r vi lite insikt i vad du &auml;r intresserad av"
+
+#: src/pandgv2/html/explicit-choice.html:30
+#: src/pandgv2/html/make-choice.html:37
+msgid ""
+"So we&rsquo;ll be able to give you more relevant coupons and information"
+msgstr "Och vi kan d&aring; ge dig relevant information och kuponger"
+
+#: src/pandgv2/html/explicit-choice.html:42
+#: src/pandgv2/html/make-choice.html:49
+msgid "No, turn cookies off"
+msgstr "Nej, avaktivera cookies"
+
+#: src/pandgv2/html/explicit-choice.html:45
+#: src/pandgv2/html/make-choice.html:52
+msgid "Yes, allow cookies and continue"
+msgstr " Ja, till&aring;t cookies och forts&auml;tt"
+
+#: src/pandgv2/html/make-choice.html:19
+#: src/pandgv2/html/opted-in-banner.html:20
+msgid "Change Cookie Settings"
+msgstr "&Auml;ndra cookie-inst&auml;llningar"
+
+#: src/pandgv2/html/make-choice.html:22
+msgid ""
+"We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;"
+"cookies&rdquo; give you a more personal website experience by tracking what "
+"you click on. Approved cookies have always been there, but we need to make "
+"sure you understand what they&rsquo;re about."
+msgstr ""
+"Dessa digitala cookies ger dig en personligare webbplatsupplevelse genom att "
+"sp&aring;ra det du klickar p&aring;. Det har alltid funnits godk&auml;nda "
+"cookies d&auml;r, men vi vill g&auml;rna f&ouml;rs&auml;kra oss om att du "
+"f&ouml;rst&aring;r hur de anv&auml;nds."
+
+#: src/pandgv2/html/make-choice.html:24
+msgid "Cookies allow you to:"
+msgstr "Cookies g&ouml;r att du kan:"
+
+#: src/pandgv2/html/make-choice.html:26
+msgid "Become a registered member to log in"
+msgstr "Bli en registrerad medlem"
+
+#: src/pandgv2/html/make-choice.html:28
+msgid "Print off money saving coupons"
+msgstr "Best&auml;lla gratisprover och skriva ut rabattkuponger"
+
+#: src/pandgv2/html/mobile-choice.html:18
+msgid "Do you want some cookies now?"
+msgstr "Do you want some cookies now?"
+
+#: src/pandgv2/html/mobile-choice.html:19
+msgid "yes"
+msgstr "yes"
+
+#: src/pandgv2/html/mobile-choice.html:20
+msgid "no"
+msgstr "no"
+
+#: src/pandgv2/html/mobile-footer.html:17
+#: src/pandgv2/html/mobile-notice.html:36
+msgid "Turn Off Cookies"
+msgstr "&#0196;ndra cookie-inst&#0228;llningar"
+
+#: src/pandgv2/html/mobile-notice.html:22
+msgid "We use cookies to give you the best mobile experience for our website."
+msgstr ""
+"Vi anv&#0228;nder cookies f&#0246;r att ge dig den b&#0228;sta mobila "
+"upplevelsen f&#0246;r v&#0229;r hemsida."
+
+#: src/pandgv2/html/mobile-notice.html:23
+#: src/pandgv2/html/mobile-explicit-choice.html:20
+msgid "Learn More"
+msgstr "L&#0228;s mer"
+
+#: src/pandgv2/html/mobile-notice.html:27
+msgid ""
+"Cookies provide added functionality and allow us to provide information "
+"tailored to you."
+msgstr ""
+"Cookies ge ytterligare funktioner och till&#0229;ter oss att ge information "
+"som &#0228;r skr&#0228;ddarsydd f&#0246;r dig."
+
+#: src/pandgv2/html/mobile-notice.html:31
+#: src/pandgv2/html/mobile-opted-out.html:17
+#: src/pandgv2/html/opted-out-banner.html:26
+msgid "Allow Cookies"
+msgstr "Till&aring;t cookies"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. "
+"Cookies must be enabled in order to continue."
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:22
+msgid  ""
+"Cookies provide added functionality and allow us to provide "
+"information tailored to you"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:23
+msgid  "P&amp;G Privacy Policy"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:30
+msgid  "Leave Site"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:46
+msgid  "http://pg.com"
+msgstr ""
+
+#: src/pandgv2/html/notice-banner.html:23
+#: src/pandgv2/html/simple-notice.html:23
+msgid "Change cookie settings"
+msgstr "&Auml;ndra cookie-inst&auml;llningar"
+
+#: src/pandgv2/html/opted-in-banner.html:19
+msgid ""
+"<strong>Good news! Your cookies are turned on.</strong> This means you are "
+"enjoying the best personalised experience."
+msgstr ""
+"<strong>Goda nyheter! Dina cookies &auml;r aktiverade.</strong> Detta "
+"inneb&auml;r att du f&aring;r b&auml;sta m&ouml;jliga, personliga upplevelse."
+
+#: src/pandgv2/html/opted-out-banner.html:20
+msgid "Turn cookies on for a better website experience"
+msgstr ""
+"Aktivera cookies f&ouml;r en f&ouml;rb&auml;ttrad upplevelse p&aring; "
+"webbplatsen."
+
+#: src/pandgv2/html/simple-notice.html:19
+msgid "We use cookies to give you the best experience of our website."
+msgstr ""
+"Vi anv&auml;nder cookies f&ouml;r att ge dig b&auml;sta m&ouml;jliga "
+"upplevelse p&aring; v&aring;r webbplats."

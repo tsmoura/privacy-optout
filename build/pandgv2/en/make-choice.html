@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>Change Cookie Settings</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;cookies&rdquo; give you a more personal website experience by tracking what you click on. Approved cookies have always been there, but we need to make sure you understand what they&rsquo;re about.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Cookies allow you to:</h2>
+          <ul class="list mister-cookie">
+            <li>Become a registered member to log in</li>
+            <li>Post comments or ratings</li>
+            <li>Print off money saving coupons</li>
+            <li>See information that&rsquo;s tailored to you</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">How cookies work:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work.png" alt="How cookies work:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">When you click on a link about certain products</li>
+          <li class="two">We get an idea of the things you&rsquo;d be interested in</li>
+          <li class="three">So we&rsquo;ll be able to give you more relevant coupons and information</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/english/cookie_notice.shtml" target="_blank">
+            Find out more about cookies
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">No, turn cookies off</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Yes, allow cookies and continue</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

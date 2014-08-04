@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Ga je akkoord met het gebruik van cookies?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="mister-cookie-wrapper">
+          <p>Wij hebben altijd goedgekeurde digitale "cookies" gebruikt om onze bezoekers zo een meer persoonlijke website ervaring te geven. Ga je ermee akkoord dat de cookies achterblijven? <strong>"Cookies" moeten ingeschakeld</strong> zijn als je jezelf wilt registreren.</p>
+        </div>
+        <h2 class="how-cookies-work">Hoe cookies werken:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_nl.png" alt="Hoe cookies werken:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">Wanneer u op een link van bepaalde producten klikt,</li>
+          <li class="two">Krijgen we een idee van de dingen waarvoor u zich interesseert</li>
+          <li class="three">Hierdoor kunnen we u de meest relevante bonnen en informatie geven</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/dutch/cookie_notice.shtml" target="_blank">
+            Meer informatie over cookies
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Nee, cookies uitschakelen</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Ja, cookies accepteren en doorgaan</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('are_you_sure');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

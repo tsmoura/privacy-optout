@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+global.util = require('util');
+var fs = require('fs'),
+    exec = require('child_process').exec;
+
+function log_data(scope, msg) {
+  if (msg && msg.length > 0) {
+    console.log(scope + " [" + msg + "]");
+  }
+};
+
+function repackage(filename) {
+  log_data("\033[35mRepackaging\033[0m", filename);
+
+  var pkg = exec('rm -rf build/ && node bin/build.js messages && node bin/build.js build', function (error, stdout, stderr) {
+    log_data("stdout", stdout);
+    log_data("stderr", stderr);
+    (error == null) ? console.log("\033[32mDone\033[0m") : log_data("\033[31mError\033[0m", error);
+  });
+};
+
+function fileWatcher(filename) {
+  return function (stat, prevStat) {
+    if (stat.mtime > prevStat.mtime) { repackage(filename); }
+  };
+};
+
+function watchDirectory(dir) {
+  fs.readdir(dir, function (err, files) {
+    if (err) { return;}
+
+    for (var i=0, n=files.length; i<n;i++) {
+      var filename = dir + "/" + files[i];
+      if (fs.statSync(filename).isDirectory()) {
+        watchDirectory(dir);
+      } else {
+        log_data("\033[33mWatching\033[0m", filename);
+        fs.watchFile(filename, {"interval": 300}, fileWatcher(filename));
+      }
+    }
+    repackage("*");
+  });
+};
+
+watchDirectory("./src");

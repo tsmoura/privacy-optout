@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>Oj! Dina cookies &auml;r avaktiverade</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>V&auml;nligen till&aring;t cookies f&ouml;r att registrera dig eller logga in p&aring; ditt konto</p>
+              <h2 class="muted">Utan cookies kan du inte:</h2>
+              <ul>
+                <li>Registrera dig som medlem eller logga in</li>
+                <li>Kommentera och s&auml;tta betyg</li>
+                <li>Best&auml;lla gratisprover och skriva ut rabattkuponger</li>
+                <li>Se information som &auml;r skr&auml;ddarsydd f&ouml;r dig</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/swedish/cookie_notice.shtml" target="_blank">
+                Mer information om cookies
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">Till&aring;t cookies och forts&auml;tt</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">Avbryt</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>Ak, s&#299;kfaili tiek izsl&#275;gtas</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>L&#363;dzu, &#316;aujiet s&#299;kfailus re&#291;istr&#275;ties vai ieiet sav&#257; kont&#257;</p>
+              <h2 class="muted">Bez s&#299;kdatn&#275;m J&#363;s nevar&#275;siet:</h2>
+              <ul>
+                <li>k&#316;&#363;t par re&#291;istr&#275;tu lietot&#257;ju</li>
+                <li>ies&#363;t&#299;t koment&#257;rus vai v&#275;rt&#275;jumus</li>
+                <li>pas&#363;t&#299;t bezmaksas paraugus un izdruk&#257;t atlai&#382;u kuponus</li>
+                <li>redz&#275;t, k&#257;da inform&#257;cija Jums ir piem&#275;rota</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/latvian/cookie_notice.shtml" target="_blank">
+                Uzziniet vair&#257;k par s&#299;kdatn&#275;m
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">J&#257;, at&#316;aut s&#299;kdatnes un turpin&#257;t</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">Atsaukt</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

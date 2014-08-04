@@ -1,0 +1,156 @@
+/* <3 CSS */
+
+/*
+----------------------------------------------------------------
+  R E S E T 
+---------------------------------------------------------------- */
+/* Typography */
+#bt-modal h1, #bt-modal h2, #bt-modal h3, #bt-modal h4, #bt-modal h5, #bt-modal h6{ margin: 0 0 10px 0; font-weight: normal; color: #990000; }
+#bt-modal p{ line-height: 21px; margin: 0 0 10px 0; }
+#bt-modal a, #bt-modal a:active, #bt-modal a:visited { color: #333333; text-decoration: underline; }
+#bt-modal a:hover{ text-decoration: none; }
+
+#bt-modal h1{ padding: 0 0 30px 0; font-size: 20px; }
+#bt-modal h2{ font-weight: bold; font-size: 12px; }
+#bt-modal h3{ font-weight: bold; font-size: 11px; }
+
+#bt-modal ul,
+#bt-modal ol{ margin: 0; padding: 0; list-style: none; }
+#bt-modal li{ margin: 0 0 5px 0; }
+    
+/*
+----------------------------------------------------------------
+  G L O B A L S 
+---------------------------------------------------------------- */
+#bt-modal .bt-nindent{ display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+#bt-modal .bt-west,
+#bt-modal .bt-east{ float: left; display: inline; position: relative; }
+#bt-modal .bt-clr{ clear: both; }
+#bt-modal .bt-block{ padding: 0 0 15px 0; overflow: hidden; }
+
+/*
+----------------------------------------------------------------
+  S T R U C T U R E
+---------------------------------------------------------------- */
+#wrap{ padding: 50px; text-align: center; }
+
+#bt-overlay-iframe{ 
+  width: 1000px; height: 1000px;
+  display: block; 
+  background: #d2d2d2;
+  filter: alpha(opacity=50);
+  z-index: 9990;
+  position: absolute; top: 0; left: 0; 
+}
+
+#bt-overlay{ 
+  display: none; 
+  background: #d2d2d2;
+  opacity: 0.5;
+  z-index: 10000;
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
+ #bt-modal{
+   display: none;
+   position: absolute; top: 50px; left: 0;
+   z-index: 100000;
+   width: 600px;
+   top: 40px;
+   z-index: 10001;
+   background: #a6a6a6;
+   background: rgba(166,166,166,0.8); 
+   padding: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 11px;
+ }
+  #bt-modal .bt-wrapper{
+    color: #333333;
+    width: 540px; height: 374px;
+    background: #fff;
+    padding: 22px 30px 22px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  #bt-modal .bt-close{ 
+    position: absolute; top: 10px; right: 10px; 
+    width: 14px; height: 14px;
+    background: url(../images/icon-close.png) 0 0 no-repeat;
+  }
+    #bt-modal .bt-wrapper .bt-panel{
+      overflow: hidden; 
+    }
+  
+    #bt-modal .bt-clientlogo{ 
+      border: 1px solid #dfdfdf; 
+      margin: 5px 22px 5px 0; padding: 0; 
+      float: left;
+    }
+    #bt-modal .bt-west{
+      width: 340px;
+      border-right: 1px solid #e1e1e1;
+      padding: 0 20px 0 0;
+    }
+    #bt-modal .bt-east{
+      width: 159px;
+      padding: 0 0 0 20px;
+    }
+    #bt-modal .bt-btnrow{ clear: both; width: 540px; overflow: hidden; }
+      #bt-modal .bt-btnrow a{ 
+        float: left; 
+        margin: 0 10px 0 0;
+      }
+      #bt-modal .bt-btnrow span.bt-notification{
+        float: left; display: inline;
+        background: #e1f4d8;
+        font-weight: bold;
+        margin: 2px 0 0 12px; padding: 8px 22px 7px 10px;
+        position: relative;
+      }
+        #bt-modal .bt-btnrow span.bt-notification-icon{ 
+          width: 12px; height: 29px;
+          background: #fff url(../images/icon-notifcation.png) 0 0 no-repeat;
+          position: absolute; top: 0; left: -12px;
+        }
+      #bt-modal a.bt-btn{
+        border: 1px solid #a9a9a9;
+        background: #fff;
+        font-size: 11px; color: #990000; font-weight: bold; text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+      #bt-modal a.bt-btn:hover{ background: #f7f7f7; }
+      #bt-modal a.bt-cancel{ padding: 10px 0 10px 0; }
+  #bt-modal .bt-slideout{
+    background: #e3e3e3;
+    padding: 12px 30px 12px 30px;
+    position: relative;
+    box-shadow: 0 4px 2px 0 #bdbdbd inset;
+  }
+    #bt-modal .bt-slideout h3{ margin: 0; }
+    #bt-modal .bt-slideout .bt-expand{ cursor: pointer; }
+    #bt-modal .bt-slideout .bt-expand.arrow{
+      width: 31px; height: 21px; 
+      background: url(../images/icon-arrow.png) 0 0 no-repeat;
+      position: absolute; top: 9px; right: 30px;
+    }
+    #bt-modal .bt-slideout .bt-expand.open{ background-position: 0 -21px; }
+    #bt-modal .bt-slideout .bt-hidden{ display: none; }
+  
+  #bt-modal table.bt-partner-table{
+    padding: 20px 0 20px 0; margin: 0; 
+    border-collapse: collapse;
+  }
+    #bt-modal table.bt-partner-table tr,
+    #bt-modal table.bt-partner-table td,
+    #bt-modal table.bt-partner-table th{ margin: 0; padding: 0; }
+    #bt-modal table.bt-partner-table td{ padding: 5px 20px 5px 0; }
+    #bt-modal table.bt-partner-table td:first-child{ padding-right: 40px; }
+    
+    
+  
+  
+  

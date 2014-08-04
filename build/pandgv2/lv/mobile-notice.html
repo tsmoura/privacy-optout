@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding-middle">
+    <section class="mobile-banner">
+      <div class="close">
+        <span class="pull-right" id="opt-in-header-close">&times;</span>
+      </div>
+      <div class="mobile-notice" id="notice">
+        <p>M&#275;s izmantojam s&#299;kdatnes, lai dotu jums lab&#257;ko pieredzi m&#363;su m&#257;jas lap&#257;. , P&#257;rl&#363;kojot j&#363;s piekr&#299;tat s&#299;kdat&#326;u izmanto&#353;anu.</p>
+        <a href="#" id="show-options">Lai ieg&#363;tu vair&#257;k inform&#257;cijas</a>
+      </div>
+      <div id="option" class="mobile-notice" style="display: none">
+        <div class="notice">
+          Cepumi sniegt pievienoto funkcionalit&#257;ti un &#316;auj mums, lai sniegtu inform&#257;ciju piel&#257;gota jums.
+        </div>
+        <div class="split">
+          <div class="accepts" id="opt-in-user-accepts">
+            At&#316;aut s&#299;kdatnes
+          </div>
+        </div>
+        <div class="split">
+          <div class="declines" id="opt-in-user-declines">
+            Atkritumu s&#299;kdatnes
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    document.getElementById("opt-in-header-close").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-closed');
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+
+    document.getElementById("show-options").onclick = function() {
+      document.getElementById("option").style.display = 'block';
+      document.getElementById("notice").style.display = 'none';
+    };
+    </script>
+  </body>
+</html>

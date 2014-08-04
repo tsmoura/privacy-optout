@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>Cambie la configuraci&#243;n para el uso de cookies</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">Estas &#8220;cookies&#8221; digitales le brindan una experiencia m&#225;s personal en el sitio web al dar seguimiento a los puntos en donde hace clic.  Las cookies aprobadas siempre han estado all&#237;, pero queremos asegurarnos de que entiende c&#243;mo se usan.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Las cookies le permiten:</h2>
+          <ul class="list mister-cookie">
+            <li>Registrarse como miembro o iniciar sesi&#243;n</li>
+            <li>Publicar comentarios o calificaciones</li>
+            <li>Ordenar muestras gratis e imprimir cupones de descuento</li>
+            <li>Ver informaci&#243;n adaptada de acuerdo con sus preferencias</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">C&#243;mo funcionan las cookies:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_es.png" alt="C&#243;mo funcionan las cookies:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">Cuando hace clic en un enlace acerca de ciertos productos</li>
+          <li class="two">Nos damos una idea acerca de las cosas que le interesan</li>
+          <li class="three">As&#237; podremos brindarle cupones e informaci&#243;n m&#225;s relevantes</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/spanish/cookie_notice.shtml" target="_blank">
+            Acerca de las cookies
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">No, desactivar las cookies</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">S&#237;, permitir las cookies y continuar</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

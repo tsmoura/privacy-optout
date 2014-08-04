@@ -1,0 +1,12 @@
+{
+  "name": "privacy-optout",
+  "version": "0.0.2",
+  "private": true,
+  "dependencies": {
+    "uglify-js": "1.3.2",
+    "colorize": "0.1.0",
+    "commander": "1.0.5",
+    "jslint": "0.1.9",
+    "wrench": "1.3.9"
+  }
+}

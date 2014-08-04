@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>Modificarea set&#259;rilor modulelor cookie</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">Aceste module digitale &#8222;cookie&#8221; v&#259; ofer&#259; o experien&#539;&#259; mai personal&#259; a site-ului web prin urm&#259;rirea elementelor pe care face&#539;i clic.  Modulele cookie aprobate au existat &#238;ntotdeauna aici, dar dorim s&#259; ne asigur&#259;m c&#259; a&#539;i &#238;n&#539;eles modul lor de utilizare.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Modulele cookie v&#259; permit s&#259;:</h2>
+          <ul class="list mister-cookie">
+            <li>Deveni&#355;i un membru &#238;nregistrat</li>
+            <li>Posta&#355;i comentarii sau evalu&#259;ri</li>
+            <li>Comanda&#539;i mostre gratuite &#x219;i s&#259; tip&#259;ri&#539;i cupoane de reducere</li>
+            <li>Consulta&#355;i informa&#355;iile care sunt personalizate pentru dvs.</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">Cum func&#355;ioneaz&#259; modulele cookie:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_ro.png" alt="Cum func&#355;ioneaz&#259; modulele cookie:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">Atunci c&#226;nd face&#355;i clic pe o leg&#259;tur&#259; despre anumite produse</li>
+          <li class="two">Reu&#351;im s&#259; ne facem o idee despre lucrurile care v&#259; intereseaz&#259;</li>
+          <li class="three">Astfel vom fi capabili s&#259; v&#259; oferim mai multe cupoane &#351;i informa&#355;ii relevante</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/romanian/cookie_notice.shtml" target="_blank">
+            Afla&#355;i mai multe despre modulele cookie
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Nu, dezactiva&#355;i modulele cookie</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Da, permit modulele cookie &#351;i continui</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

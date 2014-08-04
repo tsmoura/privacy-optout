@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html class="opted_out opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="banner flush">
+      <div class="banner-padding-wrapper">
+        <p class="white-text float-left off-notice">
+          Ligue os cookies para uma melhor experi&ecirc;ncia no site Web.
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/portuguese/cookie_notice.shtml" target="_blank">
+            Obter mais informa&ccedil;&otilde;es sobre cookies
+          </a>
+        </p>
+        <a class="float-right allow-cookies button large-size" href="#" id="opt-in-user-accepts-it">
+          Permitir cookies
+        </a>
+      </div>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-accepts-it").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

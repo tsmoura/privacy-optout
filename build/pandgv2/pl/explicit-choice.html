@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Would you like to allow cookies?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="mister-cookie-wrapper">
+          <p>We've always used approved digital 'cookies' to give our visitors a more personal website experience. Are you happy for them to stay? Please note, <strong>cookies must be turned on</strong> if you want to register.</p>
+        </div>
+        <h2 class="how-cookies-work">Jak dzia&#x0142;aj&#x0105; pliki cookie:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_pl.png" alt="Jak dzia&#x0142;aj&#x0105; pliki cookie:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">Kiedy klikasz w &#x0142;&#x0105;cze dotycz&#x0105;ce konkretnego produktu</li>
+          <li class="two">Dowiadujemy si&#x0119; czym jeste&#x015b; zainteresowany</li>
+          <li class="three">Mo&#x017c;emy wi&#x0119;c zaoferowa&#x0107; Ci odpowiedniejsze kupony i informacje</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/polish/cookie_notice.shtml" target="_blank">
+            Dowiedz si&#x0119; wi&#x0119;cej o plikach cookie
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Nie, wy&#x0142;&#x0105;cz pliki cookie</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Tak, pozw&oacute;l na pliki cookie i kontynuuj</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('are_you_sure');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

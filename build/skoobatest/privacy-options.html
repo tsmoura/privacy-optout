@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+  <title>BrightTag Privacy Options</title>
+
+  <!-- META -->
+  <meta charset="utf-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="bt-overlay"></div><!-- /#bt-overlay -->
+  <div id="bt-modal"></div><!-- /#bt-modal -->
+
+  <script id="bt-template" type="text/x-jquery-tmpl">
+  <div class="bt-wrapper">
+    <div class="bt-intro bt-panel">
+      <h1>Interest-Based Advertising on Skooba.com</h1>
+      <div class="bt-west">
+        <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+		<p>Skooba.com works with trusted partners to create interest-based ads that may be displayed when you visit other websites. We respect your privacy and do not share any personally
+		identifying information with our advertising partners. In order to tailor ads to your interests, our partners may collect anonymous details about your visit to the Skooba.com site and
+		may set cookies that can be used to match a profile of your interests across multiple websites.</p>
+		<p>Your preferences and trust are our highest priority. You may learn more about or
+		choose to opt-out of Skooba.com's interest-based advertising activities using the links provided here.</p> </div>
+      <div class="bt-east">
+        <div class="bt-block">
+          <h2>Your Privacy</h2>
+          <ul>
+            <li><a href="http://www.skoobatest.com/privacy">Skooba.com Privacy Policy</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+        <div class="bt-block">
+          <h2>Things To Know</h2>
+          <ul>
+            <li><a href="#" class="bt-action-what">What happens if I opt-out?</a></li>
+            <li><a href="#" class="bt-action-empty">What is interest-based advertising?</a></li>
+            <li><a href="#">Digital Advertising Alliance Consumer Opt Out</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+      </div>
+      <div class="bt-btnrow">
+        <a href="#bt-action-confirm" class="bt-btn bt-action-confirm">Opt Out</a>
+        <a href="#" class="bt-cancel">Go Back to Shopping</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-intro -->
+
+    <div class="bt-notification bt-panel">
+      <h1>Interest-Based Advertising on Skooba.com</h1>
+      <div class="bt-west">
+        <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+        <p>Skooba.com works with trusted partners to create interest-based ads that may be displayed when you visit other websites. We respect your privacy and do not share any personally
+		identifying information with our advertising partners. In order to tailor ads to your interests, our partners may collect anonymous details about your visit to the Skooba.com site and
+		may set cookies that can be used to match a profile of your interests across multiple websites.</p>
+		<p>Your preferences and trust are our highest priority. You may learn more about
+		Skooba.com's interest-based advertising activities using the links provided here.</p>
+      </div>
+      <div class="bt-east">
+        <div class="bt-block">
+          <h2>Your Privacy</h2>
+          <ul>
+            <li><a href="http://www.skoobatest.com/privacy">Skooba.com Privacy Policy</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+        <div class="bt-block">
+          <h2>Things To Know</h2>
+          <ul>
+            <li><a href="#" class="bt-action-what">What happens if I opt-out?</a></li>
+            <li><a href="#" class="bt-action-empty">What is interest-based advertising?</a></li>
+            <li><a href="#">Digital Advertising Alliance Consumer Opt Out</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+      </div>
+      <div class="bt-btnrow">
+        <a href="#" class="bt-btn bt-action-intro">Opt In</a>
+        <span class="bt-notification"><span class="bt-notification-icon"></span>You are currently opted-out of interest-based advertising on Skooba.com</span>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-notification -->
+
+    <div class="bt-empty bt-panel">
+      <h1>Interest-Based Advertising on Skooba.com</h1>
+      <div class="bt-west">
+        <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+        <p>Skooba.com works with trusted partners to create interest-based ads that may be displayed when you visit other websites. We respect your privacy and do not share any personally
+		identifying information with our advertising partners. In order to tailor ads to your interests, our partners may collect anonymous details about your visit to the Skooba.com site and
+		may set cookies that can be used to match a profile of your interests across multiple websites.</p>
+		<p>Your preferences and trust are our highest priority. You may learn more about or
+		choose to opt-out of Skooba.com's interest-based advertising activities using the links provided here.</p>
+      </div>
+      <div class="bt-east">
+        <div class="bt-block">
+          <h2>Your Privacy</h2>
+          <ul>
+            <li><a href="http://www.skoobatest.com/privacy">Skooba.com Privacy Policy</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+        <div class="bt-block">
+          <h2>Things To Know</h2>
+          <ul>
+            <li><a href="#" class="bt-action-what">What happens if I opt-out?</a></li>
+            <li><a href="#" class="bt-action-empty">What is interest-based advertising?</a></li>
+            <li><a href="#">Digital Advertising Alliance Consumer Opt Out</a></li>
+          </ul>
+        </div><!-- /.bt-block -->
+      </div>
+    </div><!-- /.bt-empty -->
+
+    <div class="bt-confirm bt-panel">
+      <h1>Please Confirm Your Opt-Out Decision</h1>
+      <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+      <p>If you opt-out, Skooba.com will no longer allow advertising partners to collect anonymous details about your visit to our site. A special 'opt-out' cookie will be sent to your browser
+	  so that we can store your preference. If you clear your browser's cookies or use a different browser to visit our site, we will not be able to retrieve your opt-out preference and you will
+	  need to opt-out again.</p>
+	  <p>After you have opted out, you may still receive targeted advertisements from Skooba.com on other websites based on anonymous details our advertising partners
+	  collected before you opted-out. You may separately choose to opt-out of the interest-based targeting managed by these companies by visiting each partner's website.</p>
+      <div class="bt-btnrow">
+        <a href="#bt-action-success" class="bt-action-success bt-btn">Opt Out</a>
+        <a href="#" class="bt-cancel">Cancel</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-confirm -->
+
+    <div class="bt-success bt-panel">
+      <h1>Success: You are now opted-out</h1>
+      <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+      <p>Since you have opted-out, Skooba.com will no longer allow advertising partners to collect anonymous details about your visit to our site. A special 'opt-out' cookie has been sent to
+	  your browser so that we can store your preference. If you clear your browser's cookies or use a different browser to visit our site, we will not be able to retrieve your opt-out preference
+	  and you will need to opt-out again.</p>
+	  <p>Even though you have opted out, you may still receive targeted advertisements from Skooba.com on other websites based on anonymous details our
+	  advertising partners collected before you opted-out. You may separately choose to opt-out of the interest-based targeting managed by these companies by visiting each partner's website.</p>
+      <div class="bt-btnrow">
+        <a href="#" class="bt-btn bt-action-close">OK</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-success -->
+
+    <div class="bt-success-opt-in bt-panel">
+      <h1>Success: You are now opted-in</h1>
+      <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+      <p>Since you have opted-in, Skooba.com will now allow advertising partners to collect anonymous details about your visit to our site. A special 'opt-in' cookie has been sent to
+	  your browser so that we can store your preference. If you clear your browser's cookies or use a different browser to visit our site, we will not be able to retrieve your opt-in preference
+	  and you may need to opt-out again.</p>
+      <div class="bt-btnrow">
+        <a href="#" class="bt-btn bt-action-close">OK</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-success-opt-in -->
+
+    <div class="bt-sorry bt-panel">
+      <h1>We're sorry, but we were unable to set your opt-out preference.</h1>
+      <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+      <p>Skooba.com was unable to set your opt-out preference because your browser does not accept third-party cookies.</p>
+      <p>The opt-out system uses a third-party cookie to store your
+	  preference, but your browser has been configured to reject this type of cookie. Because of this, our advertising partners may still be able to collect certain anonymous details about your
+	  visit to our site. If you adjust your browser's settings to accept third-party cookies, you will be able to opt-out the next time you access this site.</p>
+      <div class="bt-btnrow">
+        <a href="#" class="bt-btn">OK</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-sorry -->
+
+    <div class="bt-what bt-panel">
+      <h1>What Happens if I Opt-Out?</h1>
+      <img src="http://www.skoobatest.com/skin/frontend/default/skooba_design/images/logo.gif" class="bt-clientlogo">
+      <p>If you opt-out, Skooba.com will no longer allow advertising partners to collect anonymous details about your visit to our site. A special 'opt-out' cookie will be sent to your browser
+	  so that we can store your preference. If you clear your browser's cookies or use a different browser to visit our site, we will not be able to retrieve your opt-out preference and you will
+	  need to opt-out again.</p>
+	  <p>After you have opted out, you may still receive targeted advertisements from Skooba.com on other websites based on anonymous details our advertising
+	  partners collected before you opted-out. You may separately choose to opt-out of the interest-based targeting managed by these companies by visiting each partner's website.</p>
+	  <p>If your browser does not accept third-party cookies, then we will not be able to complete the opt-out process because we cannot store
+	  your opt-out preference. If you adjust your browser's settings to accept third-party cookies, you will be able to opt-out the next time you access this site.</p>
+      <div class="bt-btnrow">
+        <a href="#" class="bt-btn bt-action-intro">OK</a>
+      </div><!-- /.bt-btnrow -->
+    </div><!-- /.bt-what -->
+
+    <a href="#" class="bt-close bt-nindent">Close</a>
+  </div><!-- /.bt-wrapper -->
+  <div class="bt-slideout">
+    <h3 class="bt-expand">View Our Interest-Based Advertising Partners</h3>
+    <a href="#" class="bt-expand arrow bt-nindent">Expand</a>
+    <div class="bt-hidden">
+      <table class="bt-partner-table">
+        {{each vendorPrivacyInfo}}
+        <tr>
+          <td><strong>${name}</strong></td>
+          <td><a href="${policyLink}">About ${name}</a></td>
+          <td><a href="${optOutLink}">Opt-Out from ${name}</a></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div><!-- /.bt-hidden -->
+  </div><!-- /.bt-slideout -->
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="//ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+  <script src="../privacy-dialog.js">{
+   "siteId" : "YvY7DUT",
+   "host" : "tagserve.stage.thebrighttag.com"
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <section class="banner">
+      <div class="min-banner-wrapper">
+        <p class="float-left">Noi utiliz&#259;m module cookie pentru a v&#259; oferi cea mai bun&#259; experien&#355;&#259; a site-ului nostru web.  Prin navigare sunte&#355;i de acord s&#259; utiliza&#355;i modulele noastre cookie.</p>
+        <nav class="float-right">
+          <ul>
+            <li>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/romanian/cookie_notice.shtml" target="_blank">
+                Afla&#355;i mai multe despre modulele cookie
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="button banner-close" href="#" id="disabled-header-close">close</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("disabled-header-close").onclick = function() {
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding-middle">
+    <section class="mobile-banner">
+      <div class="mobile-notice" id="notice">
+        <p>{% blocktrans %}We use cookies to give you the best experience of our website. Cookies must be enabled in order to continue.{% endblocktrans %}</p>
+        <a href="#" id="show-options">{% blocktrans %}Learn More{% endblocktrans %}</a>
+        <div id="read-more" class="read-more" style="display: none">
+          <p>{% blocktrans %}Cookies provide added functionality and allow us to provide information tailored to you{% endblocktrans %}
+          <a id="find-out-more-link" class="external-link" target="_blank" href="{% blocktrans %}http://www.pg.com/en_US/privacy/english/cookie_notice.shtml{% endblocktrans %}">{% blocktrans %}P&amp;G Privacy Policy{% endblocktrans %}</a></p>
+        </div>
+      </div>
+      <div class="mobile-explicit-allow-wrapper">
+        <a href="#" class="button plain" id="opt-in-user-accepts">{% blocktrans %}Allow Cookies{% endblocktrans %}</a>
+      </div>
+      <div class="go-back">
+        <a href="#" id="opt-in-user-declines">{% blocktrans %}Leave Site{% endblocktrans %}</a>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    document.getElementById('show-options').onclick = function() {
+       document.getElementById('read-more').style.display = 'block';
+       document.getElementById('show-options').style.display = 'none';
+       return false;
+    };
+    document.getElementById('opt-in-user-declines').onclick = function() {
+      Connector.trigger('bt-privacy-explicit-choice-opt-out');
+      var currentDomain =  window.parent.document.location.origin.match(/:\/\/(.[^/]+)/)[1],
+        referrerDomain = (window.parent.document.referrer) ? window.parent.document.referrer.match(/:\/\/(.[^/]+)/)[1] : null;
+      if (referrerDomain && currentDomain === referrerDomain) {
+        window.parent.document.location = "{% blocktrans %}http://pg.com{% endblocktrans %}";
+      } else {
+        window.parent.history.back(-1);
+      }
+      return false;
+    };
+    document.getElementById('opt-in-user-accepts').onclick = function() {
+      Connector.trigger('bt-privacy-explicit-choice-opt-out');
+      Connector.publish('opted_in');
+    };
+    document.getElementById('find-out-more-link').onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

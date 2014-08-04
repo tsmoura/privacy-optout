@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>&Auml;ndra cookie-inst&auml;llningar</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">Dessa digitala cookies ger dig en personligare webbplatsupplevelse genom att sp&aring;ra det du klickar p&aring;. Det har alltid funnits godk&auml;nda cookies d&auml;r, men vi vill g&auml;rna f&ouml;rs&auml;kra oss om att du f&ouml;rst&aring;r hur de anv&auml;nds.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Cookies g&ouml;r att du kan:</h2>
+          <ul class="list mister-cookie">
+            <li>Bli en registrerad medlem</li>
+            <li>Kommentera och s&auml;tta betyg</li>
+            <li>Best&auml;lla gratisprover och skriva ut rabattkuponger</li>
+            <li>Se information som &auml;r skr&auml;ddarsydd f&ouml;r dig</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">S&aring; h&auml;r fungerar cookies:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_se.png" alt="S&aring; h&auml;r fungerar cookies:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">N&auml;r du klickar p&aring; en l&auml;nk till vissa produkter</li>
+          <li class="two">f&aring;r vi lite insikt i vad du &auml;r intresserad av</li>
+          <li class="three">Och vi kan d&aring; ge dig relevant information och kuponger</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/swedish/cookie_notice.shtml" target="_blank">
+            Mer information om cookies
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Nej, avaktivera cookies</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#"> Ja, till&aring;t cookies och forts&auml;tt</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

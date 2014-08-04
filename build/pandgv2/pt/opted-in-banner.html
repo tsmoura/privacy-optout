@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="opt-in-is-active opted_in">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="banner">
+      <div class="banner-padding-wrapper">
+          <p class="float-left">Boas not&iacute;cias! Os seus cookies est&atilde;o ativados. Isto significa que est&aacute; a usufruir da melhor experi&ecirc;ncia personalizada.</p>
+         <a class="float-right" href="#" id="opt-in-update">Alterar as defini&ccedil;&otilde;es de cookies</a>
+      </div>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-update").onclick = function() {
+      if (Connector.config.workflow === 'explicit-opt-in') {
+        Connector.publish('are_you_sure');
+      } else {
+        Connector.trigger('bt-privacy-opted-in-change');
+        Connector.publish('make_choice');
+      }
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>{% blocktrans %}Oops, your cookies are turned off{% endblocktrans %}</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>{% blocktrans %}Please allow cookies to register or log in to your account.{% endblocktrans %}</p>
+              <h2 class="muted">{% blocktrans %}Without cookies you can't:{% endblocktrans %}</h2>
+              <ul>
+                <li>{% blocktrans %}Become a registered member or log in{% endblocktrans %}</li>
+                <li>{% blocktrans %}Post comments or ratings{% endblocktrans %}</li>
+                <li>{% blocktrans %}Order free samples and print money-off coupons{% endblocktrans %}</li>
+                <li>{% blocktrans %}See information that&rsquo;s tailored to you{% endblocktrans %}</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="{% blocktrans %}http://www.pg.com/en_US/privacy/english/cookie_notice.shtml{% endblocktrans %}" target="_blank">
+                {% blocktrans %}Find out more about cookies{% endblocktrans %}
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">{% blocktrans %}Allow cookies and continue{% endblocktrans %}</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">{% blocktrans %}Cancel{% endblocktrans %}</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

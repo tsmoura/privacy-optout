@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>Ups! Modulele dvs. cookie au fost dezactivate.</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>V&#259; rug&#259;m s&#259; permite&#355;i &#238;nregistrarea sau autentificarea modulelor cookie &#238;n contul dvs.</p>
+              <h2 class="muted">F&#259;r&#259; modulele cookie nu pute&#355;i s&#259;:</h2>
+              <ul>
+                <li>Deveni&#355;i un membru &#238;nregistrat sau s&#259; v&#259; autentifica&#355;i</li>
+                <li>Posta&#355;i comentarii sau evalu&#259;ri</li>
+                <li>Comanda&#355;i mostre gratuite &#351;i s&#259; tip&#259;ri&#355;i cupoane de reducere</li>
+                <li>Consulta&#355;i informa&#355;iile care sunt personalizate pentru dvs.</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/romanian/cookie_notice.shtml" target="_blank">
+                Afla&#355;i mai multe despre modulele cookie
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">Permit modulele cookie &#351;i continui</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">Anulare</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

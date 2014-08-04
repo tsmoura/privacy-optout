@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <section class="banner full-width">
+      <div class="mister-cookie-wrapper">
+        <p>Utilizamos cookies para fornecer&#45;lhe a melhor experi&ecirc;ncia no nosso site Web. Ao navegar concorda em utilizar cookies</p>
+          <nav>
+            <ul>
+              <li>
+                <a class="button plain" id="opt-in-header-action-btn" href="#">Alterar as defini&ccedil;&otilde;es de cookies</a>
+              </li>
+              <li class="plain-link-wrapper">
+                <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/portuguese/cookie_notice.shtml" target="_blank">
+                  Obter mais informa&ccedil;&otilde;es sobre cookies
+                </a>
+              </li>
+            </ul>
+         </nav>
+       </div>
+       <a class="button banner-close" href="#" id="opt-in-header-close">close</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-header-close").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-closed');
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-header-action-btn").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-change');
+      Connector.publish('make_choice');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

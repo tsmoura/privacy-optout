@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html class="opted_out opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="banner flush">
+      <div class="banner-padding-wrapper">
+        <p class="white-text float-left off-notice">
+          Iesl&#275;dziet s&#299;kdatnes, lai var&#275;tu lab&#257;k izmantot t&#299;mek&#316;a vietnes pied&#257;v&#257;t&#257;s iesp&#275;jas
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/latvian/cookie_notice.shtml" target="_blank">
+            Uzziniet vair&#257;k par s&#299;kdatn&#275;m
+          </a>
+        </p>
+        <a class="float-right allow-cookies button large-size" href="#" id="opt-in-user-accepts-it">
+          At&#316;aut s&#299;kdatnes
+        </a>
+      </div>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-accepts-it").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

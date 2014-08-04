@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Hold on, are you sure?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="shocked-mister-cookie-wrapper">
+          <p>F&#259;r&#259; modulele cookie nu pute&#355;i s&#259;:</p>
+          <ul>
+            <li>Deveni&#355;i un membru &#238;nregistrat</li>
+            <li>Posta&#355;i comentarii sau evalu&#259;ri</li>
+            <li>Comanda&#355;i mostre gratuite &#351;i s&#259; tip&#259;ri&#355;i cupoane de reducere</li>
+            <li>Consulta&#355;i informa&#355;iile care sunt personalizate pentru dvs.</li>
+          </ul>
+          <p>Even if you're already registered, you won't be able to enjoy the personalised experience you're used to.</p>
+          <p class="find-more">
+            <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/romanian/cookie_notice.shtml" target="_blank">
+              Afla&#355;i mai multe despre modulele cookie
+            </a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Yes I'm sure, turn cookies off</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Permit modulele cookie &#351;i continui</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Lukter&#279;kite, ar tikrai nenorite leisti slapuk&#371;?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="shocked-mister-cookie-wrapper">
+          <p>Be slapuk&#371; negal&#279;site:</p>
+          <ul>
+            <li>Tapti registruotu nariu</li>
+            <li>Skelbti komentarus ar vertinti</li>
+            <li>U&#382;sisakyti nemokam&#371; m&#279;gini&#371; ir spausdinti nuolaid&#371; kupon&#371;</li>
+            <li>Matyti jums pritaikyt&#261; informacij&#261;</li>
+          </ul>
+          <p>Net jei jau esate registruotas naudotojas, negal&#279;site m&#279;gautis pritaikytu turiniu, prie kurio esate &#303;prat&#281;.</p>
+          <p class="find-more">
+            <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/lithuanian/cookie_notice.shtml" target="_blank">
+              Su&#382;inoti daugiau apie slapukus
+            </a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Ne, i&#353;jungti slapukus</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Taip, leisti slapukus ir t&#281;sti</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

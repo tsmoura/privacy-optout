@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>Ups! Dine cookies er sl&aring;et fra</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>Tillad cookies for at registrere dig eller logge ind p&aring; din konto.</p>
+              <h2 class="muted">Uden cookies kan du ikke:</h2>
+              <ul>
+                <li>Blive registreret medlem eller logge ind</li>
+                <li>Poste kommentarer og vurderinger</li>
+                <li>Bestille gratis pr&oslash;ver og udskrive rabatkuponer</li>
+                <li>At se oplysninger, der er skr&aelig;ddersyet til dig</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/danish/cookie_notice.shtml" target="_blank">
+                L&aelig;s mere om cookies
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">Tillad cookies, og forts&aelig;t</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">Annuller</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

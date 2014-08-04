@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Hold on, are you sure?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="shocked-mister-cookie-wrapper">
+          <p>Without cookies you can't:</p>
+          <ul>
+            <li>Become a registered member</li>
+            <li>Post comments or ratings</li>
+            <li>Order free samples and print money-off coupons</li>
+            <li>See information that's tailored to you</li>
+          </ul>
+          <p>Even if you're already registered, you won't be able to enjoy the personalised expereince you're used to.</p>
+          <p class="find-more">
+            <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/english/cookie_notice.shtml" target="_blank">
+              German Find out more about cookies
+            </a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Yes I'm sure, turn cookies off</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Allow cookies and continue</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      new EventManager(window).trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

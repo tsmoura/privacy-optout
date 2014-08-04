@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal cookies-required">
+        <header>
+          <h1>Ups!Os seus cookies est&atilde;o desativados</h1>
+        </header>
+        <div class="content-wrapper">
+            <div class="sad-mister-cookie-wrapper">
+              <p>Permita os cookies para se registar ou iniciar a sess&atilde;o na sua conta</p>
+              <h2 class="muted">Sem cookies n&atilde;o pode:</h2>
+              <ul>
+                <li>Tornar-se num membro registado ou iniciar a sess&atilde;o</li>
+                <li>Publicar coment&aacute;rios ou classifica&ccedil;&otilde;es</li>
+                <li>Encomendar amostras gr&aacute;tis e imprimir cup&otilde;es de desconto</li>
+                <li>Consultar informa&ccedil;&otilde;es personalizadas para si</li>
+              </ul>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/portuguese/cookie_notice.shtml" target="_blank">
+                Obter mais informa&ccedil;&otilde;es sobre cookies
+              </a>
+            </div>
+        </div>
+        <footer>
+          <nav class="opt-in-user-selection">
+            <ul>
+              <li>
+                <a id="opt-in-user-accepts" class="button positive" href="#">Permitir cookies e continuar</a>
+              </li>
+              <li>
+                <a id="opt-in-user-declines" class="button negative" href="#">Cancelar</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding-middle">
+    <section class="mobile-banner">
+      <div class="mobile-notice" id="notice">
+        <p>Mes naudojame slapukus, kad suteikti Jums geriausi&#261; patirt&#303; m&#363;s&#371; svetain&#279;je. Nar&#353;ykl&#279;je turi b&#363;ti &#303;jungtas toliau.</p>
+        <a href="#" id="show-options">Daugiau informacijos</a>
+        <div id="read-more" class="read-more" style="display: none">
+          <p>Slapukai suteikti prid&#279;tin&#281; funkcionalum&#261; ir leid&#382;ia mums teikti informacij&#261; pritaikyta jums.
+          <a id="find-out-more-link" class="external-link" target="_blank" href="http://www.pg.com/en_US/privacy/lithuanian/cookie_notice.shtml">P&amp;G Asmens privatumo parei&#353;kim&#261;</a></p>
+        </div>
+      </div>
+      <div class="mobile-explicit-allow-wrapper">
+        <a href="#" class="button plain" id="opt-in-user-accepts">Leisti Slapukai</a>
+      </div>
+      <div class="go-back">
+        <a href="#" id="opt-in-user-declines">Komentuoti &#353;&#303; puslap&#303;</a>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    document.getElementById('show-options').onclick = function() {
+       document.getElementById('read-more').style.display = 'block';
+       document.getElementById('show-options').style.display = 'none';
+       return false;
+    };
+    document.getElementById('opt-in-user-declines').onclick = function() {
+      Connector.trigger('bt-privacy-explicit-choice-opt-out');
+      var currentDomain =  window.parent.document.location.origin.match(/:\/\/(.[^/]+)/)[1],
+        referrerDomain = (window.parent.document.referrer) ? window.parent.document.referrer.match(/:\/\/(.[^/]+)/)[1] : null;
+      if (referrerDomain && currentDomain === referrerDomain) {
+        window.parent.document.location = "http://pg.com";
+      } else {
+        window.parent.history.back(-1);
+      }
+      return false;
+    };
+    document.getElementById('opt-in-user-accepts').onclick = function() {
+      Connector.trigger('bt-privacy-explicit-choice-opt-out');
+      Connector.publish('opted_in');
+    };
+    document.getElementById('find-out-more-link').onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

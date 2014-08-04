@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-29 14:16-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pandgv2/html/are-you-sure.html:19
+msgid "Hold on, are you sure?"
+msgstr "Lukter&#279;kite, ar tikrai nenorite leisti slapuk&#371;?"
+
+#: src/pandgv2/html/are-you-sure.html:23
+#: src/pandgv2/html/cookies-required.html:24
+msgid "Without cookies you can't:"
+msgstr "Be slapuk&#371; negal&#279;site:"
+
+#: src/pandgv2/html/are-you-sure.html:25
+msgid "Become a registered member"
+msgstr "Tapti registruotu nariu"
+
+#: src/pandgv2/html/are-you-sure.html:26
+#: src/pandgv2/html/cookies-required.html:27
+#: src/pandgv2/html/make-choice.html:27
+msgid "Post comments or ratings"
+msgstr "Skelbti komentarus ar vertinti"
+
+#: src/pandgv2/html/are-you-sure.html:27
+#: src/pandgv2/html/cookies-required.html:28
+msgid "Order free samples and print money-off coupons"
+msgstr ""
+"U&#382;sisakyti nemokam&#371; m&#279;gini&#371; ir spausdinti nuolaid&#371; "
+"kupon&#371;"
+
+#: src/pandgv2/html/are-you-sure.html:28
+msgid "See information that's tailored to you"
+msgstr "Matyti jums pritaikyt&#261; informacij&#261;"
+
+#: src/pandgv2/html/are-you-sure.html:30
+msgid ""
+"Even if you're already registered, you won't be able to enjoy the "
+"personalised experience you're used to."
+msgstr ""
+"Net jei jau esate registruotas naudotojas, negal&#279;site m&#279;gautis "
+"pritaikytu turiniu, prie kurio esate &#303;prat&#281;."
+
+#: src/pandgv2/html/are-you-sure.html:32
+#: src/pandgv2/html/cookies-disabled.html:23
+#: src/pandgv2/html/cookies-required.html:31
+#: src/pandgv2/html/explicit-choice.html:33
+#: src/pandgv2/html/make-choice.html:40 src/pandgv2/html/notice-banner.html:26
+#: src/pandgv2/html/opted-out-banner.html:21
+#: src/pandgv2/html/simple-notice.html:26
+msgid "http://www.pg.com/en_US/privacy/english/cookie_notice.shtml"
+msgstr "http://www.pg.com/en_US/privacy/lithuanian/cookie_notice.shtml"
+
+#: src/pandgv2/html/are-you-sure.html:33
+#: src/pandgv2/html/cookies-disabled.html:24
+#: src/pandgv2/html/cookies-required.html:32
+#: src/pandgv2/html/explicit-choice.html:34
+#: src/pandgv2/html/make-choice.html:41 src/pandgv2/html/notice-banner.html:27
+#: src/pandgv2/html/opted-out-banner.html:22
+#: src/pandgv2/html/simple-notice.html:27
+msgid "Find out more about cookies"
+msgstr "Su&#382;inoti daugiau apie slapukus"
+
+#: src/pandgv2/html/are-you-sure.html:42
+msgid "Yes I'm sure, turn cookies off"
+msgstr "Ne, i&#353;jungti slapukus"
+
+#: src/pandgv2/html/are-you-sure.html:45
+#: src/pandgv2/html/cookies-required.html:40
+msgid "Allow cookies and continue"
+msgstr "Taip, leisti slapukus ir t&#281;sti"
+
+#: src/pandgv2/html/cookies-disabled.html:19
+#: src/pandgv2/html/notice-banner.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. By browsing "
+"you agree to our use of cookies."
+msgstr ""
+"Mes naudojame slapukus, kad gal&#279;t&#371; suteikti jums geriausi&#261; "
+"patirt&#303; m&#363;s&#371; svetain&#279;je. Nar&#353;ydami j&#363;s "
+"sutinkate su m&#363;s&#371; slapuk&#371; naudojim&#261;."
+
+#: src/pandgv2/html/cookies-required.html:19
+msgid "Oops, your cookies are turned off"
+msgstr "O, J&#363;s&#371; slapukai i&#353;jungti"
+
+#: src/pandgv2/html/cookies-required.html:23
+msgid "Please allow cookies to register or log in to your account."
+msgstr ""
+"Pra&#353;au leisti slapukus u&#382;siregistruoti arba prisijungti prie savo "
+"s&#261;skaitos"
+
+#: src/pandgv2/html/cookies-required.html:26
+msgid "Become a registered member or log in"
+msgstr "Tapti registruotu nariu"
+
+#: src/pandgv2/html/cookies-required.html:29
+#: src/pandgv2/html/make-choice.html:29
+msgid "See information that&rsquo;s tailored to you"
+msgstr "Matyti jums pritaikyt&#261; informacij&#261;"
+
+#: src/pandgv2/html/cookies-required.html:43
+msgid "Cancel"
+msgstr "Nutrauktii"
+
+#: src/pandgv2/html/explicit-choice.html:19
+msgid "Would you like to allow cookies?"
+msgstr "Ar leid&#382;iate priimti slapukus?"
+
+#: src/pandgv2/html/explicit-choice.html:23
+msgid ""
+"We've always used approved digital 'cookies' to give our visitors a more "
+"personal website experience. Are you happy for them to stay? Please note, "
+"<strong>cookies must be turned on</strong> if you want to register."
+msgstr ""
+"Mes visada naudojame patvirtintus skaitmeninius &#8222;slapukus&#8220;, "
+"m&#363;s&#371; lankytojams suteikian&#269;ius galimyb&#281; matyti "
+"pritaikyt&#261; interneto svetain&#279;s turin&#303;. Ar sutinkate juos "
+"priimti? Atminkite, kad norint u&#382;siregistruoti turi b&#363;ti &#303;"
+"jungta &#8222;slapuk&#371;&#8220; funkcija."
+
+#: src/pandgv2/html/explicit-choice.html:25 standard input:26
+#: src/pandgv2/html/make-choice.html:32 input:33
+msgid "How cookies work:"
+msgstr "Kaip veikia slapukai:"
+
+#: src/pandgv2/html/explicit-choice.html:26
+#: src/pandgv2/html/make-choice.html:33
+msgid "../img/how_cookies_work.png"
+msgstr "../img/how_cookies_work_lt.png"
+
+#: src/pandgv2/html/explicit-choice.html:28
+#: src/pandgv2/html/make-choice.html:35
+msgid "When you click on a link about certain products"
+msgstr "Jums spustel&#279;jus konkre&#269;i&#371; produkt&#371; nuorod&#261;"
+
+#: src/pandgv2/html/explicit-choice.html:29
+#: src/pandgv2/html/make-choice.html:36
+msgid "We get an idea of the things you&rsquo;d be interested in"
+msgstr "Mes su&#382;inome, kas jus domina"
+
+#: src/pandgv2/html/explicit-choice.html:30
+#: src/pandgv2/html/make-choice.html:37
+msgid ""
+"So we&rsquo;ll be able to give you more relevant coupons and information"
+msgstr ""
+"Tod&#279;l galime jums pateikti aktualesnius kuponus ir informacij&#261;"
+
+#: src/pandgv2/html/explicit-choice.html:42
+#: src/pandgv2/html/make-choice.html:49
+msgid "No, turn cookies off"
+msgstr "Ne, i&#353;jungti slapukus"
+
+#: src/pandgv2/html/explicit-choice.html:45
+#: src/pandgv2/html/make-choice.html:52
+msgid "Yes, allow cookies and continue"
+msgstr "Taip, leisti slapukus ir t&#281;sti"
+
+#: src/pandgv2/html/make-choice.html:19
+#: src/pandgv2/html/opted-in-banner.html:20
+msgid "Change Cookie Settings"
+msgstr "Keisti slapuk&#371; nuostatas"
+
+#: src/pandgv2/html/make-choice.html:22
+msgid ""
+"We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;"
+"cookies&rdquo; give you a more personal website experience by tracking what "
+"you click on. Approved cookies have always been there, but we need to make "
+"sure you understand what they&rsquo;re about."
+msgstr ""
+
+#: src/pandgv2/html/make-choice.html:24
+msgid "Cookies allow you to:"
+msgstr ""
+
+#: src/pandgv2/html/make-choice.html:26
+msgid "Become a registered member to log in"
+msgstr ""
+
+#: src/pandgv2/html/make-choice.html:28
+msgid "Print off money saving coupons"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:18
+msgid "Do you want some cookies now?"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:19
+msgid "yes"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:20
+msgid "no"
+msgstr ""
+
+#: src/pandgv2/html/mobile-footer.html:17
+#: src/pandgv2/html/mobile-notice.html:36
+msgid "Turn Off Cookies"
+msgstr "I&#353;jungti slapukus"
+
+#: src/pandgv2/html/mobile-notice.html:22
+msgid "We use cookies to give you the best mobile experience for our website."
+msgstr ""
+"Mes naudojame slapukus, kad gal&#279;t&#371; suteikti jums geriausi&#261; "
+"patirt&#303; m&#363;s&#371; svetain&#279;je. Nar&#353;ydami j&#363;s "
+"sutinkate su m&#363;s&#371; slapuk&#371; naudojim&#261;."
+
+#: src/pandgv2/html/mobile-notice.html:23
+#: src/pandgv2/html/mobile-explicit-choice.html:20
+msgid "Learn More"
+msgstr "Daugiau informacijos"
+
+#: src/pandgv2/html/mobile-notice.html:27
+msgid ""
+"Cookies provide added functionality and allow us to provide information "
+"tailored to you."
+msgstr ""
+
+#: src/pandgv2/html/mobile-notice.html:31
+#: src/pandgv2/html/mobile-opted-out.html:17
+#: src/pandgv2/html/opted-out-banner.html:26
+msgid "Allow Cookies"
+msgstr "Leisti Slapukai"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. "
+"Cookies must be enabled in order to continue."
+msgstr "Mes naudojame slapukus, kad suteikti Jums geriausi&#261; "
+"patirt&#303; m&#363;s&#371; svetain&#279;je. Nar&#353;ykl&#279;je "
+"turi b&#363;ti &#303;jungtas toliau."
+
+#: src/pandgv2/html/mobile-explicit-choice.html:22
+msgid  ""
+"Cookies provide added functionality and allow us to provide "
+"information tailored to you"
+msgstr "Slapukai suteikti prid&#279;tin&#281; funkcionalum&#261; "
+"ir leid&#382;ia mums teikti informacij&#261; pritaikyta jums."
+
+
+#: src/pandgv2/html/mobile-explicit-choice.html:23
+msgid  "P&amp;G Privacy Policy"
+msgstr "P&amp;G Asmens privatumo parei&#353;kim&#261;"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:30
+msgid  "Leave Site"
+msgstr "Komentuoti &#353;&#303; puslap&#303;"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:46
+msgid  "http://pg.com"
+msgstr "http://pg.com"
+
+#: src/pandgv2/html/notice-banner.html:23
+#: src/pandgv2/html/simple-notice.html:23
+msgid "Change cookie settings"
+msgstr "Keisti slapuk&#371; nuostatas"
+
+#: src/pandgv2/html/opted-in-banner.html:19
+msgid ""
+"<strong>Good news! Your cookies are turned on.</strong> This means you are "
+"enjoying the best personalised experience."
+msgstr ""
+"<strong>Puiku! J&#363;s&#371; slapukai &#303;jungti.</strong> Tai rei&#353;"
+"kia, kad gal&#279;site m&#279;gautis jums pritaikytu turiniu."
+
+#: src/pandgv2/html/opted-out-banner.html:20
+msgid "Turn cookies on for a better website experience"
+msgstr ""
+"&#302;junkite slapukus, kad b&#363;t&#371; patogiau nar&#353;yti interneto "
+"svetain&#281;"
+
+#: src/pandgv2/html/simple-notice.html:19
+msgid "We use cookies to give you the best experience of our website."
+msgstr ""

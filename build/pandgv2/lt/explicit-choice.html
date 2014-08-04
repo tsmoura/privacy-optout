@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Ar leid&#382;iate priimti slapukus?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="mister-cookie-wrapper">
+          <p>Mes visada naudojame patvirtintus skaitmeninius &#8222;slapukus&#8220;, m&#363;s&#371; lankytojams suteikian&#269;ius galimyb&#281; matyti pritaikyt&#261; interneto svetain&#279;s turin&#303;. Ar sutinkate juos priimti? Atminkite, kad norint u&#382;siregistruoti turi b&#363;ti &#303;jungta &#8222;slapuk&#371;&#8220; funkcija.</p>
+        </div>
+        <h2 class="how-cookies-work">Kaip veikia slapukai:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_lt.png" alt="Kaip veikia slapukai:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">Jums spustel&#279;jus konkre&#269;i&#371; produkt&#371; nuorod&#261;</li>
+          <li class="two">Mes su&#382;inome, kas jus domina</li>
+          <li class="three">Tod&#279;l galime jums pateikti aktualesnius kuponus ir informacij&#261;</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/lithuanian/cookie_notice.shtml" target="_blank">
+            Su&#382;inoti daugiau apie slapukus
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">Ne, i&#353;jungti slapukus</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">Taip, leisti slapukus ir t&#281;sti</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('are_you_sure');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

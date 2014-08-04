@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>{% blocktrans %}Hold on, are you sure?{% endblocktrans %}</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="shocked-mister-cookie-wrapper">
+          <p>{% blocktrans %}Without cookies you can't:{% endblocktrans %}</p>
+          <ul>
+            <li>{% blocktrans %}Become a registered member{% endblocktrans %}</li>
+            <li>{% blocktrans %}Post comments or ratings{% endblocktrans %}</li>
+            <li>{% blocktrans %}Order free samples and print money-off coupons{% endblocktrans %}</li>
+            <li>{% blocktrans %}See information that's tailored to you{% endblocktrans %}</li>
+          </ul>
+          <p>{% blocktrans %}Even if you're already registered, you won't be able to enjoy the personalised experience you're used to.{% endblocktrans %}</p>
+          <p class="find-more">
+            <a id="opt-in-find-out-more-link" href="{% blocktrans %}http://www.pg.com/en_US/privacy/english/cookie_notice.shtml{% endblocktrans %}" target="_blank">
+              {% blocktrans %}Find out more about cookies{% endblocktrans %}
+            </a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">{% blocktrans %}Yes I'm sure, turn cookies off{% endblocktrans %}</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">{% blocktrans %}Allow cookies and continue{% endblocktrans %}</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

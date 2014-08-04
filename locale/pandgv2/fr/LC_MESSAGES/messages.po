@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-29 14:16-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pandgv2/html/are-you-sure.html:19
+msgid "Hold on, are you sure?"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:23
+#: src/pandgv2/html/cookies-required.html:24
+msgid "Without cookies you can't:"
+msgstr "Sans cookies, vous ne pouvez pas:"
+
+#: src/pandgv2/html/are-you-sure.html:25
+msgid "Become a registered member"
+msgstr "Vous enregistrer comme membre"
+
+#: src/pandgv2/html/are-you-sure.html:26
+#: src/pandgv2/html/cookies-required.html:27
+#: src/pandgv2/html/make-choice.html:27
+msgid "Post comments or ratings"
+msgstr "Partager votre avis ou vos commentaires sur nos produits"
+
+#: src/pandgv2/html/are-you-sure.html:27
+#: src/pandgv2/html/cookies-required.html:28
+msgid "Order free samples and print money-off coupons"
+msgstr ""
+"Demander des &eacute;chantillons gratuits ou imprimer des bons de r&eacute;duction"
+
+#: src/pandgv2/html/are-you-sure.html:28
+msgid "See information that's tailored to you"
+msgstr "Voir des informations adapt&eacute;es &agrave vos besoins"
+
+#: src/pandgv2/html/are-you-sure.html:30
+msgid ""
+"Even if you're already registered, you won't be able to enjoy the "
+"personalised experience you're used to."
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:32
+#: src/pandgv2/html/cookies-disabled.html:23
+#: src/pandgv2/html/cookies-required.html:31
+#: src/pandgv2/html/explicit-choice.html:33
+#: src/pandgv2/html/make-choice.html:40 src/pandgv2/html/notice-banner.html:26
+#: src/pandgv2/html/opted-out-banner.html:21
+#: src/pandgv2/html/simple-notice.html:26
+msgid "http://www.pg.com/en_US/privacy/english/cookie_notice.shtml"
+msgstr "http://www.pg.com/en_US/privacy/french/cookie_notice.shtml"
+
+#: src/pandgv2/html/are-you-sure.html:33
+#: src/pandgv2/html/cookies-disabled.html:24
+#: src/pandgv2/html/cookies-required.html:32
+#: src/pandgv2/html/explicit-choice.html:34
+#: src/pandgv2/html/make-choice.html:41 src/pandgv2/html/notice-banner.html:27
+#: src/pandgv2/html/opted-out-banner.html:22
+#: src/pandgv2/html/simple-notice.html:27
+msgid "Find out more about cookies"
+msgstr "Plus d'informations sur les cookies"
+
+#: src/pandgv2/html/are-you-sure.html:42
+msgid "Yes I'm sure, turn cookies off"
+msgstr ""
+
+#: src/pandgv2/html/are-you-sure.html:45
+#: src/pandgv2/html/cookies-required.html:40
+msgid "Allow cookies and continue"
+msgstr "Autoriser les cookies et continuer"
+
+#: src/pandgv2/html/cookies-disabled.html:19
+#: src/pandgv2/html/notice-banner.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. By browsing "
+"you agree to our use of cookies."
+msgstr ""
+"Nous utilisons des cookies pour vous donner la meilleure exp&eacute;rience sur notre "
+" site. En naviguant, vous acceptez que nous utilisions des cookies."
+
+#: src/pandgv2/html/cookies-required.html:19
+msgid "Oops, your cookies are turned off"
+msgstr "Oh, les cookies ne sont pas autoris&#233;s !"
+
+#: src/pandgv2/html/cookies-required.html:23
+msgid "Please allow cookies to register or log in to your account."
+msgstr ""
+"Vous devez autoriser les cookies pour vous inscrire ou acc&#233;der &#224; "
+"votre compte."
+
+#: src/pandgv2/html/cookies-required.html:26
+msgid "Become a registered member or log in"
+msgstr "Vous inscrire en tant que membre ou acc&#233;der &#224; votre compte"
+
+#: src/pandgv2/html/cookies-required.html:29
+#: src/pandgv2/html/make-choice.html:29
+msgid "See information that&rsquo;s tailored to you"
+msgstr "Voir des informations adapt&eacute;es &agrave vos besoins"
+
+#: src/pandgv2/html/cookies-required.html:43
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/pandgv2/html/explicit-choice.html:19
+msgid "Would you like to allow cookies?"
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:23
+msgid ""
+"We've always used approved digital 'cookies' to give our visitors a more "
+"personal website experience. Are you happy for them to stay? Please note, "
+"<strong>cookies must be turned on</strong> if you want to register."
+msgstr ""
+
+#: src/pandgv2/html/explicit-choice.html:25 standard input:26
+#: src/pandgv2/html/make-choice.html:32 input:33
+msgid "How cookies work:"
+msgstr "Le fonctionnement des cookies :"
+
+#: src/pandgv2/html/explicit-choice.html:26
+#: src/pandgv2/html/make-choice.html:33
+msgid "../img/how_cookies_work.png"
+msgstr "../img/how_cookies_work_fr.png"
+
+#: src/pandgv2/html/explicit-choice.html:28
+#: src/pandgv2/html/make-choice.html:35
+msgid "When you click on a link about certain products"
+msgstr "Quand vous cliquez sur les liens de certains produits"
+
+#: src/pandgv2/html/explicit-choice.html:29
+#: src/pandgv2/html/make-choice.html:36
+msgid "We get an idea of the things you&rsquo;d be interested in"
+msgstr "Nous nous faisons une id&#233;e des articles qui vous int&#233;ressent"
+
+#: src/pandgv2/html/explicit-choice.html:30
+#: src/pandgv2/html/make-choice.html:37
+msgid ""
+"So we&rsquo;ll be able to give you more relevant coupons and information"
+msgstr ""
+"Et nous avons alors la possibilit&#233; de vous offrir des bons et des "
+"informations qui vous correspondent mieux"
+
+#: src/pandgv2/html/explicit-choice.html:42
+#: src/pandgv2/html/make-choice.html:49
+msgid "No, turn cookies off"
+msgstr "Non, d&#233;sactiver les cookies"
+
+#: src/pandgv2/html/explicit-choice.html:45
+#: src/pandgv2/html/make-choice.html:52
+msgid "Yes, allow cookies and continue"
+msgstr "Oui, autoriser les cookies et continuer"
+
+#: src/pandgv2/html/make-choice.html:19
+#: src/pandgv2/html/opted-in-banner.html:20
+msgid "Change Cookie Settings"
+msgstr "Changer les param&#232;tres des cookies"
+
+#: src/pandgv2/html/make-choice.html:22
+msgid ""
+"We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;"
+"cookies&rdquo; give you a more personal website experience by tracking what "
+"you click on. Approved cookies have always been there, but we need to make "
+"sure you understand what they&rsquo;re about."
+msgstr ""
+"Ces &#171; cookies &#187; num&#233;riques vous procurent une exp&#233;rience "
+"plus personnalis&#233;e de notre site web en m&#233;morisant les articles "
+"sur lesquels vous avez cliqu&#233;. Les cookies approuv&#233;s ont toujours "
+"exist&#233;, mais nous tenons &#224; nous assurer que vous comprenez bien "
+"leur fonctionnement."
+
+#: src/pandgv2/html/make-choice.html:24
+msgid "Cookies allow you to:"
+msgstr "Les cookies vous permettent de :"
+
+#: src/pandgv2/html/make-choice.html:26
+msgid "Become a registered member to log in"
+msgstr "Vous enregistrer comme membre"
+
+#: src/pandgv2/html/make-choice.html:28
+msgid "Print off money saving coupons"
+msgstr "Commander des &eacute;chantillons gratuits et imprimer des bons de r&eacute;duction"
+
+#: src/pandgv2/html/mobile-choice.html:18
+msgid "Do you want some cookies now?"
+msgstr ""
+
+#: src/pandgv2/html/mobile-choice.html:19
+msgid "yes"
+msgstr "Oui"
+
+#: src/pandgv2/html/mobile-choice.html:20
+msgid "no"
+msgstr "No"
+
+#: src/pandgv2/html/mobile-footer.html:17
+#: src/pandgv2/html/mobile-notice.html:36
+msgid "Turn Off Cookies"
+msgstr "D&#233;sactiver les cookies"
+
+#: src/pandgv2/html/mobile-notice.html:22
+msgid "We use cookies to give you the best mobile experience for our website."
+msgstr ""
+"Nous utilisons les cookies pour vous procurer la meilleure exp&#233;rience "
+"de notre site web. En poursuivant votre navigation, vous acceptez "
+"l&#8217;utilisation de cookies."
+
+#: src/pandgv2/html/mobile-notice.html:23
+#: src/pandgv2/html/mobile-explicit-choice.html:20
+msgid "Learn More"
+msgstr "En savoir plus"
+
+#: src/pandgv2/html/mobile-notice.html:27
+msgid ""
+"Cookies provide added functionality and allow us to provide information "
+"tailored to you."
+msgstr ""
+"Les t&#233;moins fournissent des fonctionnalit&#233;s suppl&#233;mentaires "
+"et nous permettent de fournir des informations sur mesure pour vous."
+
+#: src/pandgv2/html/mobile-notice.html:31
+#: src/pandgv2/html/mobile-opted-out.html:17
+#: src/pandgv2/html/opted-out-banner.html:26
+msgid "Allow Cookies"
+msgstr "Autoriser les cookies"
+
+#: src/pandgv2/html/mobile-explicit-choice.html:19
+msgid ""
+"We use cookies to give you the best experience of our website. "
+"Cookies must be enabled in order to continue."
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:22
+msgid  ""
+"Cookies provide added functionality and allow us to provide "
+"information tailored to you"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:23
+msgid  "P&amp;G Privacy Policy"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:30
+msgid  "Leave Site"
+msgstr ""
+
+#: src/pandgv2/html/mobile-explicit-choice.html:46
+msgid  "http://pg.com"
+msgstr ""
+
+#: src/pandgv2/html/notice-banner.html:23
+#: src/pandgv2/html/simple-notice.html:23
+msgid "Change cookie settings"
+msgstr "Changer les param&#232;tres des cookies"
+
+#: src/pandgv2/html/opted-in-banner.html:19
+msgid ""
+"<strong>Good news! Your cookies are turned on.</strong> This means you are "
+"enjoying the best personalised experience."
+msgstr ""
+"<strong>Bonne nouvelle!  Vos cookies sont activ&#233;s.</strong> Cela "
+"signifie que vous profitez d&#233;sormais d'une exp&#233;rience ultra-"
+"personnalis&#233;e."
+
+#: src/pandgv2/html/opted-out-banner.html:20
+msgid "Turn cookies on for a better website experience"
+msgstr ""
+"Activer les cookies pour une meilleure exp&#233;rience de notre site web"
+
+#: src/pandgv2/html/simple-notice.html:19
+msgid "We use cookies to give you the best experience of our website."
+msgstr ""
+"Nous utilisons les cookies pour vous procurer la meilleure exp&#233;rience "
+"de notre site web. En poursuivant votre navigation, vous acceptez "
+"l&#8217;utilisation de cookies."

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <section class="banner">
+      <div class="min-banner-wrapper">
+        <p class="float-left">We use cookies to give you the best experience of our website. By browsing you agree to our use of cookies.</p>
+        <nav class="float-right">
+          <ul>
+            <li>
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/english/cookie_notice.shtml" target="_blank">
+                Find out more about cookies
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="button banner-close" href="#" id="disabled-header-close">close</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("disabled-header-close").onclick = function() {
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

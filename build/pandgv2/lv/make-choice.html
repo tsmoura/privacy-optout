@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal">
+      <header>
+        <h1>Main&#299;t s&#299;kdat&#326;u iestat&#299;jumus</h1>
+      </header>
+      <div class="content-wrapper">
+        <p class="intro">We don&rsquo;t mean the chocolate chip kind, these digital &ldquo;cookies&rdquo; give you a more personal website experience by tracking what you click on. Approved cookies have always been there, but we need to make sure you understand what they&rsquo;re about.</p>
+        <div class="mister-cookie-wrapper">
+          <h2>Cookies allow you to:</h2>
+          <ul class="list mister-cookie">
+            <li>Become a registered member to log in</li>
+            <li>ies&#363;t&#299;t koment&#257;rus vai v&#275;rt&#275;jumus</li>
+            <li>Print off money saving coupons</li>
+            <li>redz&#275;t, k&#257;da inform&#257;cija Jums ir piem&#275;rota</li>
+          </ul>
+        </div>
+        <h2 class="how-cookies-work">K&#257; darbojas s&#299;kdatnes:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_lv.png" alt="K&#257; darbojas s&#299;kdatnes:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">J&#363;s noklik&#353;&#311;in&#257;t uz saites par noteiktiem produktiem</li>
+          <li class="two">M&#275;s saprotam, k&#257;das lietas J&#363;s interes&#275;</li>
+          <li class="three">T&#257;d&#275;j&#257;di m&#275;s var&#275;sim Jums pied&#257;v&#257;t vair&#257;k atbilsto&#353;u kuponu un inform&#257;cijas</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/latvian/cookie_notice.shtml" target="_blank">
+            Uzziniet vair&#257;k par s&#299;kdatn&#275;m
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">N&#275;, izsl&#275;gt s&#299;kdatnes</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">J&#257;, at&#316;aut s&#299;kdatnes un turpin&#257;t</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-out');
+      Connector.publish('opted_out');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-make-choice-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

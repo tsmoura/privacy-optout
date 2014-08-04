@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="make_choice opt-in-is-active">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="modal explicit-choice">
+      <header>
+        <h1>Vai at&#316;aut s&#299;kdatnes?</h1>
+      </header>
+      <div class="content-wrapper">
+        <div class="mister-cookie-wrapper">
+          <p>M&#275;s vienm&#275;r izmantojam apstiprin&#257;tas ciparu &#8222;s&#299;kdatnes&#8221;, lai m&#363;su apmekl&#275;t&#257;jiem t&#299;mek&#316;a vietnes apmekl&#275;jums b&#363;tu person&#299;g&#257;ks. Vai piekr&#299;tat, ka t&#257;s paliek?  L&#363;dzu, &#326;emiet v&#275;r&#257;, ka &#8222;s&#299;kdatn&#275;m&#8221; ir j&#257;b&#363;t iesl&#275;gt&#257;m, ja v&#275;laties re&#291;istr&#275;ties.</p>
+        </div>
+        <h2 class="how-cookies-work">K&#257; darbojas s&#299;kdatnes:</h2>
+        <img class="opt-in-illustration" src="../img/how_cookies_work_lv.png" alt="K&#257; darbojas s&#299;kdatnes:" />
+        <ul class="opt-in-illustrated">
+          <li class="one">J&#363;s noklik&#353;&#311;in&#257;t uz saites par noteiktiem produktiem</li>
+          <li class="two">M&#275;s saprotam, k&#257;das lietas J&#363;s interes&#275;</li>
+          <li class="three">T&#257;d&#275;j&#257;di m&#275;s var&#275;sim Jums pied&#257;v&#257;t vair&#257;k atbilsto&#353;u kuponu un inform&#257;cijas</li>
+        </ul>
+        <p id="opt-in-find-out-more">
+          <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/latvian/cookie_notice.shtml" target="_blank">
+            Uzziniet vair&#257;k par s&#299;kdatn&#275;m
+          </a>
+        </p>
+      </div>
+      <footer>
+        <nav class="opt-in-user-selection">
+          <ul>
+            <li>
+              <a id="opt-in-user-declines" class="button negative" href="#">N&#275;, izsl&#275;gt s&#299;kdatnes</a>
+            </li>
+            <li>
+              <a id="opt-in-user-accepts" class="button positive" href="#">J&#257;, at&#316;aut s&#299;kdatnes un turpin&#257;t</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-user-declines").onclick = function() {
+      Connector.publish('are_you_sure');
+    };
+    document.getElementById("opt-in-user-accepts").onclick = function() {
+      Connector.trigger('bt-privacy-explicit-opt-in');
+      Connector.publish('opted_in');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

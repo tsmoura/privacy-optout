@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<!-- Standard BrightTag -->
+<script type="text/javascript" src="//btstatic.local.thebrighttag.com/tag.js">
+    { site: "carerunner1", host: "tagserve.local.thebrighttag.com:8082" }
+</script>
+<noscript>
+  <iframe src="//tagserve.local.thebrighttag.com:8082/iframe?c=carerunner1" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<!-- BrightTag Privacy-OptOut -->
+<script id="bt-privacy-api-glue-lib" src="http://privacy.local.thebrighttag.com/api/btprivacy.js"></script>
+<script type="text/javascript">
+BTPrivacy.configure({
+  host: "tagserve.local.thebrighttag.com:8082/api/privacy/",
+  siteId: "carerunner1"
+});
+// Secret P&G configuration
+window.BTPrivacyEnv = "//privacy.local.thebrighttag.com/pandg/css/";
+</script>
+<script src="http://privacy.local.thebrighttag.com/pandg/js/cookie-opt-in.js"></script>
+
+</body>
+</html>

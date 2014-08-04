@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <section class="banner full-width simple">
+      <div class="min-banner-wrapper">
+        <p class="main-description float-left">We use cookies to give you the best experience of our website.</p>
+        <nav class="float-right">
+          <ul>
+            <li>
+              <a class="button change-settings" id="opt-in-header-action-btn" href="#">Main&#299;t s&#299;kdat&#326;u iestat&#299;jumus</a>
+            </li>
+            <li class="plain-link-wrapper">
+              <a id="opt-in-find-out-more-link" href="http://www.pg.com/en_US/privacy/latvian/cookie_notice.shtml" target="_blank">
+                Uzziniet vair&#257;k par s&#299;kdatn&#275;m
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="button banner-close" href="#" id="opt-in-header-close">close</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-header-close").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-closed');
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-header-action-btn").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-change');
+      Connector.publish('make_choice');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>

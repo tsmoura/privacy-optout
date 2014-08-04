@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <a href="#" id="opt-in" class="mobile-opt-in-button">Till&aring;t cookies</a>
+    <script type="text/javascript">
+    document.getElementById("opt-in").onclick = function() {
+      Connector.publish('opted_in');
+    };
+    </script>
+  </body>
+</html>

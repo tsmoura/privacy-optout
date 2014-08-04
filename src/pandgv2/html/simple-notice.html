@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/opt-in-new.css" />
+    <script type="text/javascript" src="../js/cookieframe.min.js"></script>
+    <!--[if IE]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('footer');
+       </script>
+    <![endif]-->
+  </head>
+  <body class="with-side-padding">
+    <section class="banner full-width simple">
+      <div class="min-banner-wrapper">
+        <p class="main-description float-left">{% blocktrans %}We use cookies to give you the best experience of our website.{% endblocktrans %}</p>
+        <nav class="float-right">
+          <ul>
+            <li>
+              <a class="button change-settings" id="opt-in-header-action-btn" href="#">{% blocktrans %}Change cookie settings{% endblocktrans %}</a>
+            </li>
+            <li class="plain-link-wrapper">
+              <a id="opt-in-find-out-more-link" href="{% blocktrans %}http://www.pg.com/en_US/privacy/english/cookie_notice.shtml{% endblocktrans %}" target="_blank">
+                {% blocktrans %}Find out more about cookies{% endblocktrans %}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="button banner-close" href="#" id="opt-in-header-close">close</a>
+    </section>
+    <script type="text/javascript">
+    document.getElementById("opt-in-header-close").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-closed');
+      Connector.publish('notice_close');
+    };
+    document.getElementById("opt-in-header-action-btn").onclick = function() {
+      Connector.trigger('bt-privacy-implicit-choice-banner-change');
+      Connector.publish('make_choice');
+    };
+    document.getElementById("opt-in-find-out-more-link").onclick = function() {
+      Connector.trigger('bt-privacy-find-out-more');
+    };
+    </script>
+  </body>
+</html>
